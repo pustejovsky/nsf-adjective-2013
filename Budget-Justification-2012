@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\textwidth = 6.5 in
+\textheight = 9 in
+\oddsidemargin = 0.0 in
+\evensidemargin = 0.0 in
+\topmargin = 0.0 in
+\headheight = 0.0 in
+\headsep = 0.0 in
+
+
+
+%\parskip = 0.2in
+\parindent = 0.0in
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}{Definition}
+
+\begin{document}
+\begin{center}
+{\large {\bf Budget Justification for Brandeis University}}
+\end{center}
+
+ \vspace{-1.0em}
+\subsection*{1. Personnel}
+
+
+\begin{itemize}
+
+\item The Principal Investigator of this proposal, James Pustejovsky, holds the TJX/Feldberg Chair in Computer Science at Brandeis University, where he is Full Professor and Chair of the Language and Linguistics Program. The PI is committed for the following time: one summer salary months in each of the three years.  Dr. Pustejovsky will be responsible for overall project management at Brandeis, training graduate students in annotation work, coordination of AWS MTurking, 
+and coordinating the integration of work from consultants Dr. Zaenen and Dr. Kartunnen. 
+
+ 
+\item One graduate student from the Computer Science Department is funded at half-time for each of the three years.  His/her responsibilities will include writing the annotation guidelines, management of the undergraduate annotators, coordination of experiments at AWS, and 
+ evaluation of the annotation results. 
+\item Funds are requested for three Undergraduate students, each for six  calendar months a year, to work as annotators and for MTurking evaluation; they will also be used for programming support in the evaluation phase in the third year of the project.  
+
+\end{itemize}
+
+\subsection*{2.  AWS MTurking}
+\$6,000 is requested Amazon Web Services  Mechanical Turking expenses. 
+    \$2,000 per year for each year for annotation of adjective-based inferences. Year 1 involves annotation of same contexts as providing small gold standard. Years 2 and 3 involve inference in the wild annotation, i.e., larger context with the full snippet. 
+
+ 
+\vspace{-1.0em}
+\subsection*{3.  Travel}
+
+\$3,570 is budgeted for travel for the first year, and \$2,170 for each of year two and three,  for the following activities:
+\vspace{-1.0em}
+\begin{enumerate}
+ 
+\item Travel to PI Meetings for each year. We have budgeted \$500 per year for the PI's travel,  accommodations, and meals. 
+ 
+\item Travel to attend both national and international conferences, in order to report on findings from the proposed work. 
+
+\end{enumerate}
+
+
+\subsection*{4.   Fringe}
+
+The DHHS approved fringe benefit rates for Brandeis University for fiscal year 2014 (July 1, 2014 through June 30, 2015) and beyond is 30.0\% for the PI (Full-time faculty) and 7.7\% for the undergraduate students. The rate for students is effective only in the 3 summer months of June, July and August. Therefore it is prorated by 25\%.    
+
+
+\subsection*{5.  Overhead}
+
+Indirect Costs Ð Modified total direct costs based on DHHS negotiated rates of June 26, 2012 as follows:
+\\
+July 1 2013 Ð June 30 2014 Ð 61.5\%\\
+July 1 2014 Ð June 30 2015 Ð 62.0\%\\
+July 1 2015 Ð June 30, 2016Ð 62.5\%
+ 
+
+
+
+ \end{document}
+
