@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: proposal-2013-rev3.aux
+The style file: plain.bst
+Database file #1: propbib.bib
+Warning--I didn't find a database entry for "cieri-etal"
+Warning--empty publisher in marneffe+maccartney+manning:2006
+Warning--empty journal in grice1975logic
+Warning--empty journal in maasmulti
+Warning--empty year in maasmulti
+Warning--empty journal in munroetal2010
+Warning--empty publisher in stern+dagan:2011
+Warning--empty journal in turney2003measuring
+You've used 59 entries,
+            2118 wiz_defined-function locations,
+            824 strings with 13361 characters,
+and the built_in function-call counts, 20324 in all, are:
+= -- 2026
+> -- 854
+< -- 26
++ -- 345
+- -- 276
+* -- 1186
+:= -- 3242
+add.period$ -- 193
+call.type$ -- 59
+change.case$ -- 303
+chr.to.int$ -- 0
+cite$ -- 66
+duplicate$ -- 929
+empty$ -- 1674
+format.name$ -- 276
+if$ -- 4461
+int.to.chr$ -- 0
+int.to.str$ -- 59
+missing$ -- 64
+newline$ -- 297
+num.names$ -- 122
+pop$ -- 418
+preamble$ -- 1
+purify$ -- 253
+quote$ -- 0
+skip$ -- 681
+stack$ -- 0
+substring$ -- 1089
+swap$ -- 274
+text.length$ -- 26
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 220
+warning$ -- 7
+while$ -- 193
+width$ -- 61
+write$ -- 643
+(There were 8 warnings)
