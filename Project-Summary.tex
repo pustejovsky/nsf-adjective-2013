@@ -13,23 +13,19 @@
 {\bf IIS-RI MEDIUM: 
 Lexical Inference Patterns for Adjectives in Natural Language}\\
 {\bf PI: James Pustejovsky,  Inst: Brandeis University}; {\bf PI: Christiane Fellbaum,  Inst: Princeton University};
-{\bf PI: Cleo Condoravdi,  Inst: Stanford University}; {\bf PI: Daniel Lassiter,  Inst: Stanford University}
+{\bf PI: Daniel Lassiter,  Inst: Stanford University}; {\bf Co-PI: Cleo Condoravdi,  Inst: Stanford University}
 \end{center}
-
 
 \vspace{-0.5em}
 Effective communication relies heavily on the ability of language users to recover information that is not explicitly expressed in utterances. 
 Much of the covert information can be identified as ``semantic inferences", and as such, be associated with identifiable structural or lexical patterns in natural language.
-An understanding of how speakers identify and exploit systematic covert inferences in language has the potential to 
-enrich our models of compositionally derived inferences. 
+An understanding of how speakers identify and exploit systematic covert inferences in language has the potential to enrich our models of compositionally derived inferences. 
 At the same time, it can enhance the capabilities of natural language understanding systems to read beyond the surface forms of the text, a major goals of current {\sc nlp} research. 
 We address the ways speakers interpret texts with respect to the following questions: Did events referred to in the text in fact occur or not? 
 Are they desirable? 
 How do speakers interpret qualities ascribed to entities in a text? 
 To answer subtle questions such as these, careful analysis of the lexical semantics of adjectives is needed. 
-We propose to address the current lack of readily exploitable linguistic information for this category 
-and to explore its modeling in a large-scale, empirical investigation considering the semantic interactions 
-among textual elements as well as the linguistic judgments of ``naive" speakers. The specific aims of this proposal are:
+We propose to address the current lack of readily exploitable linguistic information for this category and to explore its modeling in a large-scale, empirical investigation considering the semantic interactions among textual elements and comparing linguistic judgments from linguistically trained and untrained (``na\"ive'') speakers. The specific aims of the proposal are:
 
 \vspace{-0.4em}
 \begin{itemize}
@@ -37,24 +33,24 @@ among textual elements as well as the linguistic judgments of ``naive" speakers.
 \item Develop an inferential model for adjectival semantics in natural language;
 
 \vspace{-0.5em}
-\item Connect this model to data by formulating templates of structure-to-inference mappings using data mining techniques over Web corpora. 
+\item Use the model to bridge expert annotations over small corpora and raw data from large corpora using structure-to-inference mappings bolstered by recent machine learning techniques;
 
 \vspace{-0.5em}
-\item Revise and enrich the  theoretical model and inference templates by examining the same data ``in the wild", that is,  crowdsourced judgments using larger textual contexts. 
+\item Crowdsource annotation using Amazon Mechanical Turk in order to collect human data on similar tasks using larger textual contexts and larger sets of adjectives than is practical using trained annotators, with the goal of improving methodologies for non-expert linguistic annotation.
 \end{itemize}
-
 
 \vspace{-.5em}
 
 We concentrate on three diverse classes of  adjectives, 
-in order to both: (a) test the applicability of the methodology to different linguistic classes; and (b) to articulate just how the structure-to-inference mapping can be modeled within each lexical class. 
-The adjective types studied are: 
-(i) dimensional and evaluative adjectives with scalar values and associated scalar implicatures, e.g., \textit{pretty, beautiful, large, huge}; (ii) evidentiality adjectives, showing varying implicatures of veridicity over a clausal complement, e.g., \textit{rude, annoying, likely}, etc.; and (iii) intensional adjectives, introducing implicatures of modal subordination, e.g., \textit{alleged, supposed, so-called}. 
-The work will result in a small Gold standard inference  corpus created by using a standard linguistic annotation effort following explicit guidelines indicating the structure-to-inference mapping for each type of adjective. 
-We compare these baseline mappings to inferential judgments made by naive native speakers (Mechanical Turk workers). 
-Preliminary studies suggest a variance from the baseline, caused by textual factors abstracted away in linguistic studies but important to explain naive judgments. 
-We use these differential judgments (linguist vs. naive annotator) 
-to classify the implicatures along two dimensions: (1) how stable an inference is regardless of linguistic context; (2) which contextual factors contribute to blocking the expected inference. 
+in order to (a) test the applicability of the methodology to different linguistic classes, and (b) highlight both common principles and divergences between structure-to-inference mappings across lexical classes. 
+We will study
+(i) dimensional and evaluative adjectives organized into scales, e.g., \textit{pretty, beautiful, large, huge}; 
+(ii) clause-selecting adjectives with varying implicatures of veridicity, e.g., \textit{rude, annoying, likely}; 
+(iii) intensional adjectives, introducing implicatures of modal subordination, e.g., \textit{alleged, supposed, so-called}. 
+The work will result in a Gold standard inference corpus created using a standard linguistic annotation effort following explicit guidelines indicating the structure-to-inference mappings for each adjective type. 
+We compare these baseline mappings to inferential judgments made by linguistically untrained native speakers. 
+Preliminary studies suggest a variance from the expert baseline, caused by textual factors typically ignored in linguistic studies. 
+We use these differential judgments (linguist vs. naive annotator) to classify the implicatures along two dimensions: (1) how stable an inference is regardless of linguistic context; (2) which contextual factors contribute to blocking the expected inference. 
 We construct a model to gauge how well our distinctions explain the behavior of these speakers. This provides an account for the interactions of different structural and lexical factors. 
 
 \vspace{-1.2em}
@@ -65,11 +61,10 @@ of corpus and lexicon annotation with significant consequences for computational
 
 \vspace{-1.2em}
 \paragraph{Broader Impact.}
-The proposed work  makes several significant contributions to a broader community of computational linguists and AI researchers. 
-One is to lay the groundwork for the 
-large-scale annotation of three classes of adjectives in order to support automatic systems in inferencing tasks. A second contribution is a more sophisticated theory 
-of the role of lexical information to inferencing. Third, an investigation of the differences between the inferencing judgments of naive speakers and those from a  
-Gold standard corpora allows us to identify the pragmatic factors contributing to the interpretation of lexical items in richer linguistic contexts. 
+The proposed work  makes several significant contributions to a broader community of computational linguists, AI researchers, and psychologists. 
+Our work lays theoretical groundwork for large-scale annotation of three classes of adjectives in order to support automatic systems in inferencing tasks. 
+A second contribution is a more sophisticated theory of the role of lexical information in human inferential behavior, a topic of considerable psychological interest.
+Third, the work holds out the promise of developing new methodologies for large-scale annotation and combining experimental and corpus investigation that could benefit the development of more human-like systems for natural language understanding.
 %One PI and one consultant are women, and female and minority students will be recruited for providing Gold standard judgments. 
 
 
