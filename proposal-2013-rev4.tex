@@ -336,7 +336,7 @@ in an unsupervised manner using a vector space model.
 %lexemes that have an evaluative component that is measurable with respect to other, 
 %semantically similar lexemes. The broader impact resulting from this work are (a) shared 
 %resources that enable automatic systems to better analyze and understand texts where 
-%evaluation and the speaker/writer$(Bc`TE(E)I�(Bs attitudes are central components; (b) empirical data -A
+%evaluation and the speaker/writer$(Bc`TE(E)I´(Bs attitudes are central components; (b) empirical data -A
 %with the potential to enhance teaching materials for English as a Second Language. 
 
 We propose an empirical large-scale and in-depth investigation of gradability among adjectives 
@@ -565,8 +565,43 @@ Pilot studies we have conducted on various subclasses of adjectives with clausal
 
 
 
+\vspace{-1.0em}
+\paragraph{a. Impersonal constructions of the type [it be ADJ (of NP) to VP]}
+ Adjectives in this syntactic pattern can belong to any of three inferential classes described above. 
+\cite{norrick:1978} lists several hundred as factive. But even among those 
+the situation is more complicated. A sentence like \textit{It was audacious of John to make a trip around the world} readily gets a factive interpretation but one like \textit{It is audacious of anyone to make a trip around the world} very rarely.
+Our preliminary investigation of the evaluative adjectives among these shows that a factive interpretation reliably arises only in the past tense with a specific \textit{of NP}. For this case we can have the structure-to-inference mapping in (\ref{sti-factive-eval}).
 
-Finally, our preliminary investigation suggests that \textit{that}-complements of factive adjectives give rise to rather solid factive interpretations but a more detailed study needs to be done.  A preliminary classification of these adjectives is available on-line (\cite{faust-adj-pol-lex}). 
+\vspace{-0.5em}
+\enumsentence{\label{sti-factive-eval}
+$ [ \mbox{ it was } \mbox{ \textit{ADJ}}_{\mbox{\textit{eval}}} \mbox{ of } \mbox{ \textit{NP}}_{\mbox{\textit{spec}}} \mbox{ to } \mbox{ \textit{VP} } ] \; \vDash \; \mbox{ \textit{NP}}_{\mbox{\textit{spec}}} \mbox{ \textit{past} } \mbox{ \textit{VP}} $
+}
+\vspace{-0.5em}
+
+\noindent
+The other variants of the pattern (present tense, non-specific \textit{NP} or no \textit{of NP}) allow for much variation in interpretation.
+
+Adjectives without epistemic entailments may nevertheless give rise to interpretations where a high degree of probability is ascribed to the truth of the complement. For instance, \textit{It was essential for researchers to collect accurate information} is judged by Mechanical Turk workers to be factual for more than 50\% of them and probable for another 35\%. 
+%(other choices were unknown, 50-50, certainly not and probably not). 
+
+Our preliminary results thus suggest that for this syntactic pattern there are several subclasses of the three broad, traditionally recognized classes, for which the exact conditioning factors have yet to be identified.
+
+\vspace{-1.0em}
+\paragraph{b. Personal constructions of the type [NP be ADJ to VP]}
+We have discovered that factive adjectives in this frame are implicative under certain circunstances for many people (\cite{csli-gang-cssp13}). 
+The preferred interpretation of \textit{I wasn't stupid to send money} is that no money was sent. We looked at 60 occurrences of \textit{is/was stupid to} in the enTenTen English corpus, one of the only curated corpora that includes blogs, and found that 25 were clearly factive, 23 clearly implicative and 12 either unclear or part of a different construction. This result was corroborated by a pilot experimental study, which showed that for a sentence such as \textit{Kim was not stupid to waste money} 66.7\% of the subjects give an implicative interpretation (when given the choice between implicative, factive and don't know). Similar results obtain with \textit{clever}.
+This pattern is clearly dependent on extra-linguistic factors: for \textit{Kim was not stupid to save money}, we get 78.6\% in favor of a factive interpretation. Previous theoretical assumptions, however, would have predicted only the factive interpretations in both cases.
+
+%%Our preliminaries studies suggest that there is wide variation among these adjectives wrt the acceptability of the implicative reading. 
+
+\vspace{-1.0em}
+\paragraph{c. Personal and impersonal constructions with a \textit{that}-complements} 
+Our preliminary investigation suggests that \textit{that}-complements of factive adjectives give rise to rather solid factive interpretations but a more detailed study needs to be done.  A preliminary classification of these adjectives is available on-line (\cite{faust-adj-pol-lex}). A structure-to-inference mapping corresponding to an impersonal syntactic frame is given in (\ref{sti-factive}).
+\vspace{-0.5em}
+\enumsentence{\label{sti-factive}
+$ [\mbox{ it be } \mbox{ \textit{ADJ}} \mbox{ that } S \; ] \; \vDash \; S$
+}
+\vspace{-0.5em}
 
 %The distinction between writer and protagonist based inferences is made most clearly in Sauri (2008) but that study contains little information about adjectives and some of the categorizations seem to be wrong. 
 %He treats many more adjectives as factive than seems warranted. 
@@ -932,30 +967,43 @@ in WordNet and the application of WordNet's data to automatic reasoning tasks, w
 
 \subsection{Clause-selecting Adjectives}
 
-We will develop an initial categorization of the 200 adjectives that most often appear in clausal complements on the basis of the inferential signature(s) most suited to them. To do this we will follow the same method as proposed in the previous section; we explore the web with regular expressions, looking for patterns such as ``It {\sc BE ADJ} to". We extract 2,000 corpus snippets from the Web based on these adjectives with their frame. A corpus snippet is a text that contains the sentence in which the target adjective with its pattern occurs and the sentence before and the sentence after it. We will balance this corpus so that each adjective occurs at least 10 times. Linguist annotators will classify these snippets according to the initial categorization. 
+We will select the 100 most frequent adjectives with clausal complements in the en-Ten-Ten corpus. We will extract 1,000 corpus snippets from the Web based on these adjectives with their frame. (A corpus snippet is a text that contains the sentence in which the target adjective with its pattern occurs and the sentence before and the sentence after it. The en-Ten-Ten corpus, unfortunately, doesn’t give enough context). We will balance this corpus so that each adjective occurs at least 10 times. Following the MATTER methodology, linguist annotators will annotate these snippets with their epistemic inference pattern and the factors that are judged to be relevant for this interpretation.
+
+On the basis of these snippets we will construct examples that exhibit variation in the proposed features. These stimuli will be submitted to MTurkers. 
+The possible interpretations will be presented according to two different conditions: in one case the subjects will have to chosen between a positive, a negative and a ``don’t know'' answer; in the other, they will choose on the 7-point scale, developed in \cite{sauri:2008phd,sauri-pustejovsky2012} and validated in \cite{demarneff+manning+potts:2012}.
+For inference patterns that are not recognized by linguists we will add follow-up tests, to find out whether the MTurker considers the expression as part of his/her language or not.
+
+On the basis of these judgments we will estimate whether the different features based on the linguistic annotations correspond to those used in the real world. In the cases there is no fit, the linguist annotators will propose new features that will be tested as described above. 
+
+The annotators will annotate 1,000 new, naturally occurring snippets. These 1,000 snippets will again be annotated by the MTurkers using both the 7-point and the 3-point scale. We will use these data to estimate how well the factors we have isolated capture the MTurkers data by building statistical models.
 
 
 
 
-We take 1,000 of these snippets to construct the examples that fit linguistic test patterns. For that, the context following the pattern itself will be changed from the naturally occurring one. For instance, it is easier to judge the factivity of an adjective when it is negated and followed by a negation of the embedded clause. If in ``It wasn't silly for John to make a trip around the world but he didn't go,'' the adjective is taken to be factive, the result is an incoherent discourse.  
+%% We will develop an initial categorization of the 200 adjectives that most often appear in clausal complements on the basis of the inferential signature(s) most suited to them. To do this we will follow the same method as proposed in the previous section; we explore the web with regular expressions, looking for patterns such as ``It {\sc BE ADJ} to". We extract 2,000 corpus snippets from the Web based on these adjectives with their frame. A corpus snippet is a text that contains the sentence in which the target adjective with its pattern occurs and the sentence before and the sentence after it. We will balance this corpus so that each adjective occurs at least 10 times. Linguist annotators will classify these snippets according to the initial categorization. 
 
-We will submit these stimuli to MTurkers with set of instructions similar to the following: 
-%\vspace{-1.0em}
-\begin{itemize}
-\item In each task, you will be shown a statement and you will be given possible interpretations of what the author seems to believe assuming that she is truthful. Select the one that you think represents the author's belief based solely on the statement without making use of any information you might have independently. If the statement does not does not make sense, or if you for some other reason cannot decide, choose the ``Cannot decide" option.
-%\vspace{-1.0em}
-%\item In each task, you will be shown a statement and you will be given possible interpretations. Select the one that you think represents the correct situation. If for some reason you cannot decide, choose the "Cannot decide" option.
-\end{itemize}
-%\vspace{-1.0em}
-The possible interpretations will be presented according to two different conditions: in one case the subjects will have to chosen between a positive, a negative and a ``don't know" answer, in the other, they will chose on the 7-point scale, developed in \cite{sauri:2008phd,sauri-pustejovsky2012} and validated in \cite{demarneff+manning+potts:2012}.
 
-For the patterns that are not recognized by linguists but are found on the Web, we will add follow-up questions, asking: ``Could you imagine yourself or a native English speaker saying the Test Sentence? If not, how would you change the Test Sentence?"
 
-On the basis of these judgments we will be able to calculate whether the different adjective classes we have constructed on the basis of our linguistic criteria correspond to classes that occur in the real world.  This step will allow us to ascertain whether there are substantial differences in the judgments about veridicity as conceived by linguists and those made by naive native readers.
 
-The same set of 1,000 snippets will be used without changes in the contexts and submitted to the subjects under the similar conditions as sketched above. This second set will help us isolate the factors that influence judgments in real life. 
+%% We take 1,000 of these snippets to construct the examples that fit linguistic test patterns. For that, the context following the pattern itself will be changed from the naturally occurring one. For instance, it is easier to judge the factivity of an adjective when it is negated and followed by a negation of the embedded clause. If in ``It wasn't silly for John to make a trip around the world but he didn't go,'' the adjective is taken to be factive, the result is an incoherent discourse.  
 
-On the basis of these crowdsourced judgments, we will be able to construct a model of the structural factors that influence readers judgments and revise the initial categorization. We will then develop annotations guidelines for trained annotators. These annotations will capture the factors that play a role in the categorization. The annotators will annotate 1,000 new, naturally occurring snippets. These 1,000 snippets will be annotated by the MTurkers according to the protocol sketched above using the scale (the 7-point or the 3-point one) which gave the most information. We will use these data to estimate how well the factors we have isolated capture the MTurkers data by building statical models. 
+%% We will submit these stimuli to MTurkers with set of instructions similar to the following: 
+%% %\vspace{-1.0em}
+%% \begin{itemize}
+%% \item In each task, you will be shown a statement and you will be given possible interpretations of what the author seems to believe assuming that she is truthful. Select the one that you think represents the author's belief based solely on the statement without making use of any information you might have independently. If the statement does not does not make sense, or if you for some other reason cannot decide, choose the ``Cannot decide" option.
+%% %\vspace{-1.0em}
+%% %\item In each task, you will be shown a statement and you will be given possible interpretations. Select the one that you think represents the correct situation. If for some reason you cannot decide, choose the "Cannot decide" option.
+%% \end{itemize}
+%% %\vspace{-1.0em}
+%% The possible interpretations will be presented according to two different conditions: in one case the subjects will have to chosen between a positive, a negative and a ``don't know" answer, in the other, they will chose on the 7-point scale, developed in \cite{sauri:2008phd,sauri-pustejovsky2012} and validated in \cite{demarneff+manning+potts:2012}.
+
+%% For the patterns that are not recognized by linguists but are found on the Web, we will add follow-up questions, asking: ``Could you imagine yourself or a native English speaker saying the Test Sentence? If not, how would you change the Test Sentence?"
+
+%% On the basis of these judgments we will be able to calculate whether the different adjective classes we have constructed on the basis of our linguistic criteria correspond to classes that occur in the real world.  This step will allow us to ascertain whether there are substantial differences in the judgments about veridicity as conceived by linguists and those made by naive native readers.
+
+%% The same set of 1,000 snippets will be used without changes in the contexts and submitted to the subjects under the similar conditions as sketched above. This second set will help us isolate the factors that influence judgments in real life. 
+
+%% On the basis of these crowdsourced judgments, we will be able to construct a model of the structural factors that influence readers judgments and revise the initial categorization. We will then develop annotations guidelines for trained annotators. These annotations will capture the factors that play a role in the categorization. The annotators will annotate 1,000 new, naturally occurring snippets. These 1,000 snippets will be annotated by the MTurkers according to the protocol sketched above using the scale (the 7-point or the 3-point one) which gave the most information. We will use these data to estimate how well the factors we have isolated capture the MTurkers data by building statical models. 
 
 \subsection{Intensional Adjectives}
 
@@ -1012,9 +1060,13 @@ well-heeled, flush, loaded} etc. while  also indicating their intensity relative
 This representation is amenable to an external evaluation with systems like \cite{clark2007role}, which allow the measurement of the contribution 
 of the encoding of  scales in WordNet.
 
-Concerning the evaluation of the predicative adjectives with clausal complements,  we will use
-the same 1,000 snippets and submit them to the Brandeis TARSQI system to mark up the events. We consider all the events as being factual. We develop a set of rules based on our classifications and evaluate how well the resulting system identifies the events using the scale used in the last MTurker experiment. 
-MORE
+Concerning the evaluation of the predicative adjectives with clausal complements,  we base a first, controlled evaluation on the Brandeis TARSQI system.  We submit our final 1,000 snippets to the system. We consider a baseline markup where all the events are factual. We then develop a set of rules based on our findings and evaluate how well the resulting TARSQI system identifies the events.  For a larger scale evaluation we incorporate our rule system and lexical patterns to BiuTee and evaluate how much it improves the performance of that system. 
+%[need more info]. 
+
+
+%% Concerning the evaluation of the predicative adjectives with clausal complements,  we will use
+%% the same 1,000 snippets and submit them to the Brandeis TARSQI system to mark up the events. We consider all the events as being factual. We develop a set of rules based on our classifications and evaluate how well the resulting system identifies the events using the scale used in the last MTurker experiment. 
+%% MORE
 
 The evaluation for intensional adjectives is similar in approach to that above. We will use the 2,000 snippet corpus  to train both a Naive Bayes and a MaxEnt classifier, where we take all mentions of the adjective to be invoking the   wide-scope reading rule. We take this as our baseline and compare the same two classifiers trained on the differentiated structure-to-inference mappings that were discovered, first by the linguists, and then, as they were enriched by the inferences in the wild. 
 
