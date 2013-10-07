@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: proposal-2013-rev5.aux
+The style file: plain.bst
+Database file #1: propbib.bib
+Warning--entry type for "bakerfellbaum2009" isn't style-file defined
+--line 77 of file propbib.bib
+Repeated entry---line 467 of file propbib.bib
+ : @article{fellbaum1990english
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 571 of file propbib.bib
+ : @article{sheinmanetal2013
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 891 of file propbib.bib
+ : @inproceedings{bakerfellbaum2009
+ :                                 ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "cieri-etal"
+Warning--to sort, need author or key in rte
+Warning--empty publisher in marneffe+maccartney+manning:2006
+Warning--empty journal in grice1975logic
+Warning--empty journal in maasmulti
+Warning--empty year in maasmulti
+Warning--empty journal in munroetal2010
+Warning--empty publisher in stern+dagan:2011
+Warning--empty journal in turney2003measuring
+You've used 64 entries,
+            2118 wiz_defined-function locations,
+            854 strings with 14758 characters,
+and the built_in function-call counts, 21874 in all, are:
+= -- 2173
+> -- 947
+< -- 28
++ -- 384
+- -- 308
+* -- 1306
+:= -- 3501
+add.period$ -- 206
+call.type$ -- 64
+change.case$ -- 332
+chr.to.int$ -- 0
+cite$ -- 72
+duplicate$ -- 967
+empty$ -- 1789
+format.name$ -- 308
+if$ -- 4769
+int.to.chr$ -- 0
+int.to.str$ -- 64
+missing$ -- 68
+newline$ -- 320
+num.names$ -- 130
+pop$ -- 456
+preamble$ -- 1
+purify$ -- 278
+quote$ -- 0
+skip$ -- 713
+stack$ -- 0
+substring$ -- 1170
+swap$ -- 277
+text.length$ -- 28
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 238
+warning$ -- 8
+while$ -- 210
+width$ -- 66
+write$ -- 693
+(There were 3 error messages)
