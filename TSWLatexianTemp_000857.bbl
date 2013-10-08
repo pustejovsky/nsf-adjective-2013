@@ -1,0 +1,338 @@
+\begin{thebibliography}{10}
+
+\bibitem{amoia2006adjective}
+M.~Amoia and C.~Gardent.
+\newblock Adjective based inference.
+\newblock In {\em Proceedings of the Workshop KRAQ'06 on Knowledge and
+  Reasoning for Language Processing}, pages 20--27. Association for
+  Computational Linguistics, 2006.
+
+\bibitem{amoia2008test}
+M.~Amoia, C.~Gardent, et~al.
+\newblock A test suite for inference involving adjectives.
+\newblock {\em Proceedings of LREC'08}, pages 19--27, 2008.
+
+\bibitem{bakerfellbaum2009}
+Collin~F. Baker and Christiane Fellbaum.
+\newblock Wordnet and framenet as complementary resources for annotation, 2009.
+
+\bibitem{barker:2002}
+Chris Barker.
+\newblock The dynamics of vagueness.
+\newblock {\em Linguistics and Philosophy}, 25(1):1--36, 2002.
+
+\bibitem{bierwisch1989semantics}
+M.~Bierwisch.
+\newblock The semantics of gradation.
+\newblock {\em Dimensional adjectives}, 71:261, 1989.
+
+\bibitem{chiarcosinpress}
+C.~Chiarcos, J.~McCrae, P.~Cimiano, and C.~Fellbaum.
+\newblock Towards open data for linguistics: Linguistic linked data.
+\newblock In {\em New Trends of Research in Ontologies and Lexical Resources}.
+  Springer, New York, in press.
+
+\bibitem{chklovski2004verbocean}
+T.~Chklovski and P.~Pantel.
+\newblock Verbocean: Mining the web for fine-grained semantic verb relations.
+\newblock In {\em Proceedings of EMNLP}, volume~4, pages 33--40, 2004.
+
+\bibitem{clark2008using}
+P.~Clark, C.~Fellbaum, and J.~Hobbs.
+\newblock Using and extending {W}ord{N}et to support question-answering.
+\newblock {\em Proc. 4th GWC}, 2008.
+
+\bibitem{clark2008augmenting}
+P.~Clark, C.~Fellbaum, J.R. Hobbs, P.~Harrison, W.R. Murray, and J.~Thompson.
+\newblock Augmenting {W}ord{N}et for deep understanding of text.
+\newblock {\em Proceedings of STEP}, pages 45--57, 2008.
+
+\bibitem{clark2007role}
+P.~Clark, W.R. Murray, J.~Thompson, P.~Harrison, J.~Hobbs, and C.~Fellbaum.
+\newblock On the role of lexical and world knowledge in {\sc rte}3.
+\newblock In {\em Proceedings of the ACL-PASCAL Workshop on Textual Entailment
+  and Paraphrasing}, pages 54--59. Association for Computational Linguistics,
+  2007.
+
+\bibitem{dagan+glickman+magnini:2005}
+Ido Dagan, Oren Glickman, and Bernardo Magnini.
+\newblock The {\sc pascal} recognising textual entailment challenge.
+\newblock In {\em MLCW}, pages 177--190, 2005.
+
+\bibitem{demarneff+manning+potts:2012}
+Marie-Catharine de~Marneffe, Christopher~D. Manning, and Christopher Potts.
+\newblock Did it happen? {T}he pragmatic complexity of veridicality assessment.
+\newblock {\em Computational Linguistics}, 38:301--333, 2012.
+
+\bibitem{marneffe+maccartney+manning:2006}
+Marie-Catherine de~Marneffe, Bill MacCartney, and Christopher~D. Manning.
+\newblock Generating typed dependency parses from phrase structure parses.
+\newblock In {\em LREC 2006}. 2006.
+
+\bibitem{demelo2012}
+G.~de~Melo, C.~Baker, N.~Ide, R.~Passonneau, and C.~Fellbaum.
+\newblock Empirical comparisons of {\sc masc} word sense annotations.
+\newblock In {\em Proceedings of LREC, Istanbul, Turkey}, 2012.
+
+\bibitem{dixon1982have}
+R.M.W. Dixon.
+\newblock {\em Where have all the adjectives gone?: and other essays in
+  semantics and syntax}, volume 107.
+\newblock De Gruyter Mouton, 1982.
+
+\bibitem{dixon:91}
+R.M.W. Dixon.
+\newblock {\em A new approach to English grammar on semantic principles}.
+\newblock Oxford University Press, 1991.
+
+\bibitem{fellbaumontology2010}
+Christiane Fellbaum.
+\newblock Wordnet.
+\newblock In {\em Theory and Application of Ontology: Computer Applications},
+  pages 231 -- 243. Springer New York, 2012.
+
+\bibitem{fellbaumencyclopedia}
+Christiane Fellbaum.
+\newblock Wordnet.
+\newblock In {\em The Encyclopedia of Applied Linguistics}. Wiley/Blackwell, to
+  appear 2013.
+
+\bibitem{fellbaumbakerLRE}
+Christiane Fellbaum and Collin Baker.
+\newblock Representing verb meaning in complementary resources.
+\newblock {\em Linguistics}, in press.
+
+\bibitem{bakerfellbaum2008}
+Christiane Fellbaum and Collin~F. Baker.
+\newblock Can {W}ord{N}et and {F}rame{N}et be made “interoperable?
+\newblock In {\em Proceedings of The First International Conference on Global
+  Interoperability for Language Resources}, page 67–74, 2008.
+
+\bibitem{fellbaumvossen2012}
+Christiane Fellbaum and Piek Vossen.
+\newblock Challenges for a multilingual {W}ord{N}et.
+\newblock {\em Language Resources and Evaluation}, 46(2):313--326, 2012.
+
+\bibitem{frawley1992linguistic}
+W.~Frawley.
+\newblock {\em Linguistic semantics.}
+\newblock Lawrence Erlbaum Associates, Inc, 1992.
+
+\bibitem{graesser1985implicit}
+A.C. Graesser and S.M. Goodman.
+\newblock Implicit knowledge, question answering, and the representation of
+  expository text.
+\newblock {\em Understanding expository text}, pages 109--171, 1985.
+
+\bibitem{grice1975logic}
+H.P. Grice.
+\newblock Logic and conversation.
+\newblock pages 64--75, 1975.
+
+\bibitem{hatzivassiloglou1997predicting}
+V.~Hatzivassiloglou and K.R. McKeown.
+\newblock Predicting the semantic orientation of adjectives.
+\newblock In {\em Proceedings of the eighth conference on European chapter of
+  the Association for Computational Linguistics}, pages 174--181. Association
+  for Computational Linguistics, 1997.
+
+\bibitem{hirschberg1991theory}
+Julia Hirschberg.
+\newblock {\em A Theory of Scalar Implicature}.
+\newblock Garland Press, 1991.
+
+\bibitem{horn2000pick}
+L.R. Horn.
+\newblock Pick a theory, not just any theory.
+\newblock {\em Negation and Polarity. Syntactic and Semantic Perspectives},
+  pages 147--192, 2000.
+
+\bibitem{ide-bunt:2010:LAW-IV}
+Nancy Ide and Harry Bunt.
+\newblock Anatomy of annotation schemes: Mapping to {\sc g}r{\sc af}.
+\newblock In {\em Proceedings of the Fourth Linguistic Annotation Workshop (LAW
+  IV)}. Association for Computational Linguistics, 2010.
+
+\bibitem{idesuderman09}
+Nancy Ide and Keith Suderman.
+\newblock Bridging the gaps: Interoperability for {\sc g}r{\sc af}, {\sc gate},
+  and {\sc uima}.
+\newblock In {\em Linguistic Annotation Workshop}, pages 27--34, 2009.
+
+\bibitem{Kamp75twotheories}
+H.~Kamp.
+\newblock Two theories about adjectives.
+\newblock In {\em Formal Semantics of Natural Language}, pages 123--155.
+  University Press, 1975.
+
+\bibitem{Kamp95prototypetheory}
+H.~Kamp and B.~Partee.
+\newblock Prototype theory and compositionality.
+\newblock {\em Cognition}, pages 57--129, 1995.
+
+\bibitem{karttunen:1971}
+Lauri Karttunen.
+\newblock Implicative verbs.
+\newblock {\em Language}, 47:340--358, 1971.
+
+\bibitem{karttunen:2012b}
+Lauri Karttunen.
+\newblock You will be lucky to break even.
+\newblock In Tracy~Holloway King and Valeria dePaiva, editors, {\em From Quirky
+  Case to Representing Space: Papers in Honor of Annie Zaenen}, pages 167--180.
+  CSLI Publications, Stanford, CA, 2012.
+
+\bibitem{kiparsky+kiparsky:1970}
+Paul Kiparsky and Carol Kiparsky.
+\newblock Fact.
+\newblock In M.~Bierwisch and K.~E. Heidolph, editors, {\em Progress in
+  Linguistics}, pages 143--173. Mouton, Hague, 1970.
+
+\bibitem{lotan:2012}
+Amnon Lotan.
+\newblock A syntax-based rule-base for textual entailment and a semantic truth
+  value annotator.
+\newblock Master's thesis, Tel Aviv University, 2012.
+
+\bibitem{lyons:77}
+John Lyons.
+\newblock {\em Semantics}.
+\newblock Cambridge University Press, 1977.
+
+\bibitem{maasmulti}
+A.L. Maas, A.Y. Ng, and C.~Potts.
+\newblock Multi-dimensional sentiment analysis with learned representations.
+
+\bibitem{mathew+katz:2009}
+Thomas Mathew and Graham Katz.
+\newblock Supervised categorization of habitual and episodic sentences.
+\newblock In {\em Sixth Midwest Computational Linguistics Colloquium}. Indiana
+  University, Bloomington, Indiana, 2009.
+
+\bibitem{mathieu2010verbs}
+Y.Y. Mathieu and C.~Felbaum.
+\newblock Verbs of emotion in {F}rench and {E}nglish.
+\newblock {\em Proceedings of GWC-2010, Mumbai, India}, 2010.
+
+\bibitem{mindt:2011}
+Ilka Mindt.
+\newblock {\em Adjective Complementation: An Empirical Analysis of Adjectives
+  Followed by that clauses}, volume~42 of {\em Studies in Corpus Linguistics}.
+\newblock John Benjamins, 2011.
+
+\bibitem{munroetal2010}
+Robert Munro, Steven Bethard, Victor Kuperman, Vicky~Tzuyin Lai, Robin Melnick,
+  Christopher Potts, Tyler Schnoebelen, and Harry Tily.
+\newblock Crowdsourcing and language studies: the new generation of linguistic
+  data.
+\newblock 2010.
+
+\bibitem{nairn+condoravdi+karttunen:2006}
+Rowan Nairn, Cleo Condoravdi, and Lauri Karttunen.
+\newblock Computing relative polarity for textual inference.
+\newblock In {\em {ICoS-5}}, pages 67--76, 2006.
+
+\bibitem{nikolova2012}
+Sonya Nikolova, Jordan Boyd-Graber, and Christiane Fellbaum.
+\newblock Collecting semantic similarity ratings to connect concepts in
+  assistive communication tools.
+\newblock In {\em Modeling, Learning and Processing of Text Technological Data
+  Structures}, pages 81--93. Springer, 2012.
+
+\bibitem{norrick:1978}
+Neal~R. Norrick.
+\newblock {\em Factive Adjectives and the Theory of Factivity}.
+\newblock Niemeyer, 1978.
+
+\bibitem{pustejovsky2012natural}
+James Pustejovsky and Amber Stubbs.
+\newblock {\em Natural language annotation for machine learning}.
+\newblock O'Reilly, 2012.
+
+\bibitem{raskin1995lexical}
+V.~Raskin and S.~Nirenburg.
+\newblock Lexical semantics of adjectives.
+\newblock {\em New Mexico State University, Computing Research Laboratory
+  Technical Report, MCCS-95-288}, 1995.
+
+\bibitem{sauri-pustejovsky2012}
+R.~Saur{\'\i} and J.~Pustejovsky.
+\newblock Are you sure that this happened? {A}ssessing the factuality degree of
+  events in text.
+\newblock {\em Computational Linguistics}, 38(2):261--299, 2012.
+
+\bibitem{sauri:2008phd}
+Roser Saur\'{i}.
+\newblock {\em A Factuality Profiler for Eventualities in Text.}
+\newblock PhD thesis, Brandeis University, 2008.
+
+\bibitem{factbank:2009}
+Roser Saur\'{i} and James Pustejovsky.
+\newblock Factbank 1.0.
+\newblock
+  \url{http://www.ldc.upenn.edu/Catalog/catalogEntry.jsp?catalogId=LDC2009T23},
+  September 2009.
+
+\bibitem{sheinmanetal2013}
+V.~Sheinman, C.~Fellbaum, I.~Julien, P.~Schulam, and T.~Tokunaga.
+\newblock Large, huge or gigantic? identifying and encoding intensity relations
+  among adjectives in wordnet.
+\newblock {\em Lexical Resources and Evaluation}, 2013.
+
+\bibitem{sheinman2009adjscales}
+V.~Sheinman and T.~Tokunaga.
+\newblock Adjscales: Visualizing differences between adjectives for language
+  learners.
+\newblock {\em IEICE TRANSACTIONS on Information and Systems},
+  92(8):1542--1550, 2009.
+
+\bibitem{snow:08}
+Rion Snow, Brendan O'Connor, Daniel Jurafsky, and Andrew~Y. Ng.
+\newblock Cheap and fast - but is it good? {E}valuating non-expert annotations
+  for natural language tasks.
+\newblock In {\em Proceedings of EMNLP}, 2008.
+
+\bibitem{stern+dagan:2011}
+Asher Stern and Ido Dagan.
+\newblock A confidence model for syntactically-motivated entailment proofs.
+\newblock In {\em Proceedings of RANLP 2011}. 2011.
+
+\bibitem{turney2003measuring}
+P.~Turney and M.L. Littman.
+\newblock Measuring praise and criticism: Inference of semantic orientation
+  from association.
+\newblock 2003.
+
+\bibitem{vanlinden+davidse:2009}
+An~{Van linden} and Kristin Davidse.
+\newblock The clausal complementation of deontic-evaluative adjectives in
+  extraposition constructions: a synchronic-diachronic approach.
+\newblock {\em Folia Linguistica: Acta Societatis Linguisticae Europaeae},
+  43:171--211, 2009.
+
+\bibitem{verhagen-EtAl:2007:SemEval-2007}
+Marc Verhagen, Robert Gaizauskas, Frank Schilder, Mark Hepple, Graham Katz, and
+  James Pustejovsky.
+\newblock Semeval-2007 task 15: Tempeval temporal relation identification.
+\newblock In {\em Proceedings of the Fourth International Workshop on Semantic
+  Evaluations (SemEval- 2007)}, page 75–80, Prague, Czech Republic, 2007.
+  Association for Computational Linguistics.
+
+\bibitem{verhagen-pustejovsky:2007:Interoperability}
+Marc Verhagen and James Pustejovsky.
+\newblock Interoperability of syntactic and semantic annotation schemes.
+\newblock In {\em Interoperability of Language Resources}, 2007.
+
+\bibitem{verhagen-stubbs-pustejovsky:2007:LAW}
+Marc Verhagen, Amber Stubbs, and James Pustejovsky.
+\newblock Combining independent syntactic and semantic annotation schemes.
+\newblock In {\em Proceedings of the Linguistic Annotation Workshop}, pages
+  109--112, Prague, Czech Republic, June 2007. Association for Computational
+  Linguistics.
+
+\bibitem{wilkinson:1970}
+Robert Wilkinson.
+\newblock Factive complements and action complements.
+\newblock In {\em CLS 6}, pages 425--444, 1970.
+
+\end{thebibliography}

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 OCT 2013 10:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 OCT 2013 19:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**proposal-2013-rev4
-(./proposal-2013-rev4.tex
+**proposal-2013-rev5
+(./proposal-2013-rev5
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -178,8 +178,8 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 \c@enumsi=\count91
 \eeindent=\dimen115
 )
-(./proposal-2013-rev4.aux)
-\openout1 = `proposal-2013-rev4.aux'.
+(./proposal-2013-rev5.aux)
+\openout1 = `proposal-2013-rev5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
 LaTeX Font Info:    ... okay on input line 65.
@@ -218,19 +218,8 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 72.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 76.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 78.
-
-
-LaTeX Warning: Citation `graesser1985implicit' on page D--1 undefined on input 
-line 78.
-
-
-LaTeX Warning: Citation `grice1975logic' on page D--1 undefined on input line 7
-9.
-
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 98.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsppl.fd
+ (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
@@ -238,397 +227,132 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
  [1
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for U+msa on input line 124.
 
-LaTeX Warning: Citation `dixon:91' on page D--2 undefined on input line 123.
-
-
-LaTeX Warning: Citation `lyons:77' on page D--2 undefined on input line 123.
-
-
-LaTeX Warning: Citation `raskin1995lexical' on page D--2 undefined on input lin
-e 123.
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 123.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 123.
+LaTeX Font Info:    Try loading font information for U+msb on input line 124.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 123.
-
-
-LaTeX Warning: Citation `raskin1995lexical' on page D--2 undefined on input lin
-e 123.
-
-
-LaTeX Warning: Citation `amoia2006adjective' on page D--2 undefined on input li
-ne 132.
-
-
-LaTeX Warning: Citation `amoia2008test' on page D--2 undefined on input line 13
-2.
-
-
-LaTeX Warning: Citation `Kamp75twotheories' on page D--2 undefined on input lin
-e 132.
-
-
-LaTeX Warning: Citation `Kamp95prototypetheory' on page D--2 undefined on input
- line 132.
-
-
-LaTeX Warning: Citation `amoia2006adjective' on page D--2 undefined on input li
-ne 148.
-
-[2]
-Overfull \hbox (1.30006pt too wide) in paragraph at lines 156--156
+) [2]
+Overfull \hbox (1.30006pt too wide) in paragraph at lines 157--157
 [] []\OT1/ppl/m/n/10 Adjectives with clausal com-ple-ments: ad-jec-tives such a
 s \OT1/ppl/m/it/10 an-noy-ing \OT1/ppl/m/n/10 and \OT1/ppl/m/it/10 nice\OT1/ppl
 /m/n/10 , when gov-ern-ing clausal
  []
 
-
-LaTeX Warning: Citation `dagan+glickman+magnini:2005' on page D--3 undefined on
- input line 163.
-
-
-LaTeX Warning: Citation `clark2007role' on page D--3 undefined on input line 17
-1.
-
-
-LaTeX Warning: Citation `clark2008augmenting' on page D--3 undefined on input l
-ine 171.
-
-
-LaTeX Warning: Citation `clark2008using' on page D--3 undefined on input line 1
-71.
-
-
-LaTeX Warning: Citation `kiparsky+kiparsky:1970' on page D--3 undefined on inpu
-t line 212.
-
-
-LaTeX Warning: Citation `karttunen:1971' on page D--3 undefined on input line 2
-12.
-
-
-LaTeX Warning: Citation `nairn+condoravdi+karttunen:2006' on page D--3 undefine
-d on input line 212.
-
-
-LaTeX Warning: Citation `sauri:2008phd' on page D--3 undefined on input line 21
-2.
-
-
-LaTeX Warning: Citation `factbank:2009' on page D--3 undefined on input line 21
-2.
-
-
-LaTeX Warning: Citation `lotan:2012' on page D--3 undefined on input line 212.
-
-
-LaTeX Warning: Citation `stern+dagan:2011' on page D--3 undefined on input line
- 212.
-
-
-LaTeX Warning: Citation `clark2007role' on page D--3 undefined on input line 21
-2.
-
-[3]
-
-LaTeX Warning: Citation `pustejovsky2012natural' on page D--4 undefined on inpu
-t line 229.
-
-<matter.pdf, id=17, 369.38pt x 223.83624pt>
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 170.
+[3] <matter.pdf, id=17, 369.38pt x 223.83624pt>
 File: matter.pdf Graphic file (type pdf)
  <use matter.pdf>
-Package pdftex.def Info: matter.pdf used on input line 233.
+Package pdftex.def Info: matter.pdf used on input line 235.
 (pdftex.def)             Requested size: 369.37909pt x 223.8357pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4]
-
-LaTeX Warning: Citation `hirschberg1991theory' on page D--5 undefined on input 
-line 294.
-
-
-LaTeX Warning: Citation `horn2000pick' on page D--5 undefined on input line 296
-.
-
-[5 <./matter.pdf>]
-
-LaTeX Warning: Citation `bierwisch1989semantics' on page D--6 undefined on inpu
-t line 301.
-
-
-LaTeX Warning: Citation `hatzivassiloglou1997predicting' on page D--6 undefined
- on input line 318.
-
-
-LaTeX Warning: Citation `turney2003measuring' on page D--6 undefined on input l
-ine 325.
-
-
-LaTeX Warning: Citation `chklovski2004verbocean' on page D--6 undefined on inpu
-t line 328.
-
-
-LaTeX Warning: Citation `maasmulti' on page D--6 undefined on input line 329.
-
-
-LaTeX Warning: Citation `bierwisch1989semantics' on page D--6 undefined on inpu
-t line 344.
-
-
-LaTeX Warning: Citation `frawley1992linguistic' on page D--6 undefined on input
- line 344.
-
-
-LaTeX Warning: Citation `dixon1982have' on page D--6 undefined on input line 34
-4.
-
-
-LaTeX Warning: Citation `sheinman2009adjscales' on page D--6 undefined on input
- line 348.
-
+[4] [5 <./matter.pdf>]
 Missing character: There is no Ó in font pplr7t!
 Missing character: There is no Ó in font pplr7t!
 Missing character: There is no Ó in font pplr7t!
-[6]
-
-LaTeX Warning: Citation `sauri:2008phd' on page D--7 undefined on input line 45
-1.
-
-
-LaTeX Warning: Citation `norrick:1978' on page D--7 undefined on input line 483
-.
-
-
-LaTeX Warning: Citation `wilkinson:1970' on page D--7 undefined on input line 4
-83.
-
-
-LaTeX Warning: Citation `barker:2002' on page D--7 undefined on input line 483.
-
-
-
-LaTeX Warning: Citation `karttunen:1971' on page D--7 undefined on input line 4
-83.
-
-
-LaTeX Warning: Citation `mindt:2011' on page D--7 undefined on input line 483.
-
-
-LaTeX Warning: Citation `vanlinden+davidse:2009' on page D--7 undefined on inpu
-t line 483.
-
-[7]
-
-LaTeX Warning: Citation `mathew+katz:2009' on page D--8 undefined on input line
- 499.
-
-
-LaTeX Warning: Citation `karttunen:2012b' on page D--8 undefined on input line 
-505.
-
-[8]
-
-LaTeX Warning: Citation `Kamp95prototypetheory' on page D--9 undefined on input
- line 548.
-
-
-LaTeX Warning: Citation `amoia2006adjective' on page D--9 undefined on input li
-ne 557.
-
-[9] [10]
-
-LaTeX Warning: Citation `marneffe+maccartney+manning:2006' on page D--11 undefi
-ned on input line 713.
-
-
-LaTeX Warning: Citation `snow:08' on page D--11 undefined on input line 720.
-
-
-LaTeX Warning: Citation `munroetal2010' on page D--11 undefined on input line 7
-20.
-
-
-LaTeX Warning: Citation `sheinman2009adjscales' on page D--11 undefined on inpu
-t line 740.
-
-[11]
-
-LaTeX Warning: Citation `sheinmanetal2013' on page D--12 undefined on input lin
-e 751.
-
-
-LaTeX Warning: Citation `sheinman2009adjscales' on page D--12 undefined on inpu
-t line 806.
-
-
-LaTeX Warning: Citation `mathieu2010verbs' on page D--12 undefined on input lin
-e 806.
-
-[12]
-
-LaTeX Warning: Citation `sauri:2008phd' on page D--13 undefined on input line 8
-64.
-
-
-LaTeX Warning: Citation `sauri-pustejovsky2012' on page D--13 undefined on inpu
-t line 864.
-
-
-LaTeX Warning: Citation `demarneff+manning+potts:2012' on page D--13 undefined 
-on input line 864.
-
-[13]
-
-LaTeX Warning: Citation `clark2007role' on page D--14 undefined on input line 9
-09.
-
-
-LaTeX Warning: Citation `clark2008augmenting' on page D--14 undefined on input 
-line 910.
-
-
-LaTeX Warning: Citation `clark2008using' on page D--14 undefined on input line 
-910.
-
-
-LaTeX Warning: Citation `sheinmanetal2013' on page D--14 undefined on input lin
-e 921.
-
-
-LaTeX Warning: Citation `sheinmanetal2013' on page D--14 undefined on input lin
-e 925.
-
-
-LaTeX Warning: Citation `clark2007role' on page D--14 undefined on input line 9
-26.
-
-[14]
-Overfull \hbox (0.24498pt too wide) in paragraph at lines 952--975
+ [6] [7] [8] [9] [10] [11] [12] [13] [14]
+Overfull \hbox (0.24498pt too wide) in paragraph at lines 954--979
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 952--975
-
- []
-
-
-Overfull \hbox (0.24498pt too wide) in paragraph at lines 979--1002
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 979--1002
+Underfull \hbox (badness 10000) in paragraph at lines 954--979
 
  []
 
 [15]
-Overfull \hbox (0.24498pt too wide) in paragraph at lines 1006--1030
+Overfull \hbox (0.24498pt too wide) in paragraph at lines 983--1007
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1006--1030
+Underfull \hbox (badness 10000) in paragraph at lines 983--1007
 
  []
 
 
-LaTeX Warning: Citation `idesuderman09' on page D--16 undefined on input line 1
-061.
+Overfull \hbox (0.24498pt too wide) in paragraph at lines 1011--1036
+[]
+ []
 
 
-LaTeX Warning: Citation `ide-bunt:2010:LAW-IV' on page D--16 undefined on input
- line 1061.
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1036
+
+ []
 
 
-LaTeX Warning: Citation `cieri-etal' on page D--16 undefined on input line 1061
+Overfull \hbox (10.08073pt too wide) in paragraph at lines 1056--1063
+[]\OT1/ppl/m/n/10 Award CNS 0855157 CI-ADDO-EN: A Second-Generation Ar-chi-tec-
+ture for Word-Net 7/29/2009 ($396,321),
+ []
+
+
+Overfull \hbox (744.10349pt too wide) in paragraph at lines 1064--1075
+\OT1/ppl/m/n/10 ($\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 000); \OM
+L/cmm/m/it/10 IIS\OT1/cmr/m/n/10 090335810\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 31\
+OML/cmm/m/it/10 =\OT1/cmr/m/n/10 2008($6\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 000)
+\OML/cmm/m/it/10 andIIS\OT1/cmr/m/n/10 100713312\OML/cmm/m/it/10 =\OT1/cmr/m/n/
+10 29\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 2009($6000)\OML/cmm/m/it/10 :Publication
+sinclude\OT1/cmr/m/n/10 [[]]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [[]]\OML/cmm/m/i
+t/10 :ThealignmentofWordNetsensesandFrameNetLexicalUnitsproceededinparallelwith
+theannotationoftheselectedwordformsinMASC\OT1/cmr/m/n/10 [[]]\OML/cmm/m/it/10 ;
+ \OT1/cmr/m/n/10 [[]]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 [[]]\OML/cmm/m/it/10 :A
+wardCNS\OT1/cmr/m/n/10 1205473\OML/cmm/m/it/10 CI \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (22.6106pt too wide) in paragraph at lines 1064--1075
+\OML/cmm/m/it/10 P \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 CollaborativeResearch \OT
+1/cmr/m/n/10 : \OML/cmm/m/it/10 LexLink \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 Alig
+ningWordNet; FrameNet; PropBankandVerbNet\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 =\OT
+1/cmr/m/n/10 1\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 2012($\OT1/ppl/m/n/10 45,000)
+ []
+
+[16]
+
+LaTeX Warning: Citation `cieri-etal' on page D--17 undefined on input line 1102
 .
 
 
-Overfull \hbox (1.47044pt too wide) in paragraph at lines 1058--1062
+Overfull \hbox (1.47044pt too wide) in paragraph at lines 1099--1103
 \OT1/ppl/m/n/10 James Puste-jovsky) 9/2008-8/2013; $503,620. This col-lab-o-ra-
 tive ef-fort with the EU-funded FLaReNet project
  []
 
+[17] (./proposal-2013-rev5.bbl
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 5.
 
-LaTeX Warning: Citation `verhagen-stubbs-pustejovsky:2007:LAW' on page D--16 un
-defined on input line 1064.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [1] [2]
+Missing character: There is no â in font pplri7t!
+Missing character: There is no € in font pplri7t!
+Missing character: There is no “ in font pplri7t!
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no “ in font pplr7t!
 
-
-LaTeX Warning: Citation `verhagen-EtAl:2007:SemEval-2007' on page D--16 undefin
-ed on input line 1064.
-
-
-LaTeX Warning: Citation `verhagen-pustejovsky:2007:Interoperability' on page D-
--16 undefined on input line 1064.
-
-[16]
-
-LaTeX Warning: Citation `sheinmanetal2013' on page D--17 undefined on input lin
-e 1074.
-
-
-LaTeX Warning: Citation `fellbaumvossen2012' on page D--17 undefined on input l
-ine 1079.
-
-
-LaTeX Warning: Citation `fellbaumencyclopedia' on page D--17 undefined on input
- line 1079.
-
-
-LaTeX Warning: Citation `fellbaumontology2010' on page D--17 undefined on input
- line 1079.
-
-
-LaTeX Warning: Citation `chiarcosinpress' on page D--17 undefined on input line
- 1079.
-
-
-LaTeX Warning: Citation `nikolova2012' on page D--17 undefined on input line 10
-79.
-
-
-LaTeX Warning: Citation `fellbaumbakerLRE' on page D--17 undefined on input lin
-e 1095.
-
-
-LaTeX Warning: Citation `bakerfellbaum2008' on page D--17 undefined on input li
-ne 1095.
-
-
-LaTeX Warning: Citation `bakerfellbaum2009' on page D--17 undefined on input li
-ne 1095.
-
-
-LaTeX Warning: Citation `demelo2012' on page D--17 undefined on input line 1095
-.
-
-[17]
-No file proposal-2013-rev4.bbl.
-(./proposal-2013-rev4.aux)
+[3]) [4] (./proposal-2013-rev5.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2302 strings out of 493488
- 32089 string characters out of 3141326
- 89248 words of memory out of 3000000
- 5544 multiletter control sequences out of 15000+200000
- 24307 words of font info for 68 fonts, out of 3000000 for 9000
+ 2341 strings out of 493488
+ 32695 string characters out of 3141326
+ 89495 words of memory out of 3000000
+ 5577 multiletter control sequences out of 15000+200000
+ 23833 words of font info for 68 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,9n,24p,1518b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,10n,24p,1518b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
@@ -640,13 +364,14 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2012/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2012/tex
-mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2012/texmf-dist
-/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on proposal-2013-rev4.pdf (17 pages, 221801 bytes).
+012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2012/texm
+f-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2012/texmf-dist/
+fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
+ype1/urw/palatino/uplri8a.pfb>
+Output written on proposal-2013-rev5.pdf (21 pages, 254017 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
+ 169 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
