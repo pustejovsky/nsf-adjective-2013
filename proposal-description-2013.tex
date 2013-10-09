@@ -232,7 +232,7 @@ its adjectives is thus potentially more powerful.
 
 %%%
 One of the resources  typically relied upon to improve automatic inferencing based on texts in natural language is supervised or unsupervised annotation of the lexical items occurring in the text. These annotations reflect directly or indirectly the inferential potential that is associated with lexical items. Some aspects of this inferential potential have been studied in detail in the linguistic literature and the computational approaches tend to take the results of these studies for granted. 
-In the case of nouns, the WordNet hierarchies have proved useful; for verbs, lists of special inference patterns have been constructed starting from the work of \cite{kiparsky+kiparsky:1970} and \cite{karttunen:1971} by \cite{nairn+condoravdi+karttunen:2006}, \cite{sauri:2008phd,factbank:2009} and \cite{lotan:2012}. Information about the inferential properties of adjectives is, however, much less easy to come by. Our preliminary studies show that, for the categories of adjectives that we are interested in, the existing resources have severe shortcomings or are non-existent. One of the reasons is that the contribution of adjectives tends to be more subtle and more dependent to the rest of the linguistic context. This difficulty requires, in our view, a more careful methodology than the one that has been used up to now for syntactic and semantic lexical categorization tasks. The availability of, on the one hand, digital corpora (the biggest one being the Web itself) and, on the other, crowd-sourcing techniques to elicit the judgments of a larger and more diverse group of native speakers allow us to go beyond the narrow base that traditionally lexical studies were based on. Moreover, the development of statistical modeling techniques allow us to test theoretical hypotheses with large datasets. This should allow us to obtain better data to feed into automatic inferencing systems (such as BiuTee \cite{stern+dagan:2011} or \cite{clark2007role}). 
+In the case of nouns, the WordNet hierarchies have proved useful in numerous studies (e.g., \cite{snow04}); for verbs, lists of special inference patterns have been constructed starting from the work of \cite{kiparsky+kiparsky:1970,karttunen:1971} by \cite{nairn+condoravdi+karttunen:2006,sauri:2008phd,factbank:2009,lotan:2012}. Information about the inferential properties of adjectives is, however, much less easy to come by. Our preliminary studies show that, for the categories of adjectives that we are interested in, the existing resources have severe shortcomings or are non-existent. One of the reasons is that the contribution of adjectives tends to be more subtle and more dependent to the rest of the linguistic context. This difficulty requires, in our view, a more careful methodology than the one that has been used up to now for syntactic and semantic lexical categorization tasks. The availability of, on the one hand, digital corpora (the biggest one being the Web itself) and, on the other, crowd-sourcing techniques to elicit the judgments of a larger and more diverse group of native speakers allow us to go beyond the narrow base that traditionally lexical studies were based on. Moreover, the development of statistical modeling techniques allow us to test theoretical hypotheses with large datasets. This should allow us to obtain better data to feed into automatic inferencing systems (such as BiuTee \cite{stern+dagan:2011} or \cite{clark2007role}). 
 Although we will start from the known linguistic literature, our main effort will be focused on corpus-based analysis with the Web itself as our main corpus and on crowd-sourcing experiments. The combination of these approaches will insure that our results are representative for a larger community of users of English but they will also help us notice textual interactions that tend to be ignored in studies based on linguists' armchair intuitions.  It is important to have a solid understanding of these interactions before embarking upon a large scale annotation task: it is only if we can characterize the contribution of the targeted lexical items in its various linguistic contexts securely enough that corpus or lexicon annotation is truly useful. 
 %To estimate the contribution of the factors we have isolated we will build statistical models and run them against corpus data. 
 
@@ -243,10 +243,9 @@ Although we will start from the known linguistic literature, our main effort wil
 \section{Theoretical Background}
 
 \subsection{Methodological Preliminaries}
+Much work in modern computational linguistics relies on the creation of annotated datasets focused on one or more related linguistic phenomena. Such gold standard corpora are essential for training and tuning the statistical models on which natural language processing tasks largely rely.
 
-Much of current computational linguistics is based on the creation of annotated datasets focused on one or more related linguistic phenomena. Such gold standard corpora are essential for  training and tuning the statistical machine learning algorithms that are being developed to process  natural language texts. 
-
-In the development of a gold standard corpus using rich linguistic annotation, it is typical to establish an initial model for the phenomena being studied. This  includes a triple, $M = \langle T,R,I \rangle$, consisting of a
+In the development of a gold standard corpus using rich linguistic annotation, it is typical to establish an initial model for the phenomena being studied. This includes a triple, $M = \langle T,R,I \rangle$, consisting of a
 vocabulary of terms, $T$, the relations between these terms, $R$, and their interpretation,
 $I$. This is often a partial  characterization of quite extensive theoretical research in an area, encoded as specification elements for subsequent annotation. These annotations provide the features that are then used for training and testing classification or labeling algorithms over the dataset. Depending on a system's performance, various aspects of the model or related specification will be revised, retrained, and then retested. 
 For this reason, we can refer to this methodology as the MATTER cycle: {\it Model}-{\it Annotate}-{\it Train}-{\it Test}-{\it Evaluate}-{\it Revise}  \cite{pustejovsky2012natural}, as illustrated in Figure (\ref{fig:matter}). 
@@ -259,7 +258,7 @@ For this reason, we can refer to this methodology as the MATTER cycle: {\it Mode
 \end{figure}
 
 \noindent 
-The ``Model Testing" phase of this cycle involves iterating over model development followed by subsequent testing by annotation.  	This  (Model-Annotate)$^*$ technique assumes a classic iterative software development cycle, as applied to the creation of a rich specification language to be used for linguistic annotation.  That is, as issues are encountered
+The ``Model Testing" phase of this cycle involves iterating over model development followed by subsequent testing by annotation. This  (Model-Annotate)$^*$ technique assumes a classic iterative software development cycle, as applied to the creation of a rich specification language to be used for linguistic annotation.  That is, as issues are encountered
 with the model when instantiated in a specification and applied to data
 through the annotation process, the model is revised to accommodate
 these observations. 
@@ -269,34 +268,33 @@ model  contextual and pragmatic factors that are often ignored or down-played in
 These involve linguistic phenomena (such as the adjective classes studied here) for which contextual factors and pragmatic effects are critical in how the annotations are interpreted.  
 
 
-%% Annie's new prose
-The corpora that can be annotated by trained annotators are, for practical reasons rather limited and rarely exhibit all the combinations of possibly relevant context factors. While some features of discourse and context have been successfully modeled and computationally tamed (\cite{hernault2010hilda,feng2012text,baldridge2005probabilistic,polanyi2004rule,forbes2003,soricut2003sentence}), many aspects of context remain entirely unexamined by the computational linguistics community; hence, experimental methods are necessary to supplement this shortcoming. With experiments we can achieve two goals: 
-1. enrich the spectrum of interpretations that the expert annotators have given with variants of English that will not be represented by the language use of the necessarily very limited number of culturally rather similar annotators
-2. allow a systematic testing of the contextually factors that the expert annotators have isolated. it is well known that isolating the factors that contribute to the perception of an inference is extremely difficult. Testing contrastive contexts with a great number of native speakers is one way to check whether the hypothesized factors are indeed the ones that are at work and whether they have been circumscribed sufficiently. For instance in FactBank, it is hypothesizing that 'NP be lucky to VP' has the meaning 'it is highly unlikely that NP VP'. We soon realized that this was too general and that this meaning is mainly found in the future. But even there more subtle factors need to isolated. In (\ref{lucky-1}), the (a) example has the highly unlikely meaning, whereas the (b) example does not (note that replacing `at least' with `in any case' makes the highly unlikely reading again more prominent).
+%% Annie's prose revised by Dan 10/9/13
+For practical reasons, the corpora that can be created using linguistically trained annotators are rather limited and rarely exhibit all the combinations of possibly relevant context factors. The result, in many domains, is a lack of data capturing what a rich, human-like understanding of texts should be. This limits the usefulness of many machine learning methods that are widely used in natural language understanding \cite{manning1999foundations,wasserman2004all,murphy2012machine}: sophisticated statistical models cannot produce rich understanding without a linguistically informed understanding of what is being modeled. Our project seeks to use standard annotation, new experimental methods based on crowdsourcing, and corpus studies together in order to address this lacuna for the important and understudied linguistic category of adjectives.
+
+Crowdsourced annotations tasks, when carefully constructed and analyzed, have been shown in previous work to have reliability comparable to traditional expert annotations in some domains including basic RTE tasks \cite{snow2008cheap}. Adopting this method as part of  approach will help us achieve three related goals. First, it makes possible systematic testing of contextual factors that have been claimed in the linguistic literature to be relevant to the inferences licensed by the use of an adjective, as well as patterns isolated on the basis of existing annotations. Second, statistical analysis of the results of larger-scale annotations gathered by experimental means make it possible to reliably identify inferences which are probabilistic, rather than deterministic, in nature; for example, the defesaible inference that someone described as \emph{attractive} is probably not \emph{stunning}. Third, systematic use of untrained annotators will make available data on the interpretations of people with linguistic backgrounds that go beyond those associated with the narrow socioeconomic groups typically involved in standard annotation efforts. 
+
+It is well known that isolating the factors that contribute to the perception of an inference is extremely difficult. Testing contrastive contexts with a large number of native speakers is one way to check whether the hypothesized factors are indeed the ones that are at work and whether they have been circumscribed sufficiently. For instance, from FactBank we learn that 'NP be lucky to VP' has the meaning 'it is highly unlikely that NP VP'. In previous work project consultants Karttunen and Zaenen \cite{karttunen:2012b,zaenen+karttunen:2013} observe that this definition is far too general, and that the ``unlikely'' meaning is mainly found in future-tense sentences. However, they show that the facts are more subtle even when tense is taken into account: in (\ref{lucky-1}), the (a) example has the highly unlikely meaning, whereas the (b) example does not (note that replacing `at least' with `in any case' makes the highly unlikely reading again more prominent).
 
 \enumsentence{
 a. Your son will be lucky to escape a jail term. \\
 b.  At least your son will be lucky to escape a jail term.
 \label{lucky-1}}
-%% end of Annie's prose
 
+\noindent Here and in many other cases, linguistic and non-linguistic context influences the inferences associated with the use of an adjective, though in general non-deterministically. The discovery and treatment of such data involving evaluative adjectives in \cite{karttunen:2012b,zaenen+karttunen:2013,csli-gang-cssp13} relied crucially on a mixture of experimental investigation, standard annotation, corpus work, and linguistic analysis of the type proposed here, and serves as an example of the promise of the methods. 
 
-Four key elements  play a role in the proposed work:
-\enumsentence{
-a. The interpretation, $I$, will focus on specific 
-{\it structure-to-inference mappings} (SIMs), indicating how a given adjective type  contributes to or enables inferences associated with its embedding  syntactic contexts.  This is achieved by the conventional expert annotation. 
-\\
-b. The  conventional ``expert'' annotation cycle is  followed by a 
-separate annotation of data constructed on the basis of the features isolated by the expert annotators but done by non-expert native speakers.
-\\
-c. Iterative refinement and enrichment of the model is accomplished by comparing non-expert and expert judgments (interpretations of SIMs for adjectives), and then revising the model appropriately. This can be referred to as {\it context-based adjudication},  revealing unseen contextual features that can then be added as model-based primitives. 
-\\
-d. We reach a final model when a new set of naturally occurring data receives the same annotation by the experts and the non-expert users (modulo the dialect variation that has been detected.)
+Four key elements play a role in our methodology:
+%\eenumsentence{\label{ }
+%\item 		\label{ a}
+%\item 		\label{ b}
+%}
+\eenumsentence{
+\item The interpretation, $I$, focuses on {\it structure-to-inference mappings} (SIMs), indicating how a given adjective type contributes to or enables inferences associated with its embedding syntactic contexts.  This is achieved by the conventional expert annotation.
+\item The  conventional ``expert'' annotation cycle is followed by a separate annotation of data by Amazon Mechanical Turk workers, using instructions developed on the basis of features isolated by expert annotators but adapted for use by linguistically untrained native speakers, borrowing methods from experimental psychology where appropriate and using larger linguistic contexts as warranted.
+\item Iterative refinement and enrichment of SIM models to include contextual and probabilistic factors is accomplished on the basis of data from both trained and untrained annotators. This can be referred to as {\it context-based adjudication},  revealing unseen contextual features that can then be added as model-based primitives. 
+\item In several key places, machine learning techniques applied to large corpora will be used to extend conclusions beyond what it is feasible for even crowdsourced human annotators to accomplish. These studies will make crucial use of the statistical resolution of data gathered from large-scale untrained annotators (see below for more details).
 }
 
- 
-%The development of the  specification for the adjective classes follows
-\noindent We proceed as follows. For each adjective class being studied (Scalar, Factive, Intensional), we establish an initial model, incorporating the appropriate SIM as the interpretation function. Expert and non-expert annotations create corresponding gold standards, from which we perform context-based adjudication. 
+\noindent We proceed as follows. For each adjective class being studied (Scalar, Factive, Intensional), we establish an initial model, incorporating the appropriate SIM as the interpretation function. Expert and na\"ive annotations create corresponding gold standards, from which we perform context-based adjudication. 
  
 
 
@@ -304,14 +302,10 @@ d. We reach a final model when a new set of naturally occurring data receives th
 
 
 \subsection{Scalar adjectives}
-%&&Christiane edited this 12/13AM&&
-
-Linguistic fluency entails the ability to reconstruct implicit information that is not overtly expressed in the utterance. 
-%According to \cite{graesser1985implicit} estimate, 90\% of what 
-%is communicated is implicit and must be inferred. \cite{grice1975logic}, in his investigation 
-%of the pragmatics of human communication, postulated principles of cooperative 
-%conversation, by which context-dependent meanings can be recognized and interpreted 
-%without being expressed literally or even at all. 
+Human language understanding involves active reconstruction of information which is merely implicit in an utterance, or which can be reconstructed on the basis of an utterance together with its linguistic, social, and worldly context \cite{grice1975logic,hobbs1993interpretation,clark1996using,hanna2003effects,piantadosi2012communicative}.
+%
+%
+%
 This is true in particular 
 for information accessing scales referring to gradable expressions. 
 \cite{hirschberg1991theory} shows how speakers generate and interpret scalar implicatures 
