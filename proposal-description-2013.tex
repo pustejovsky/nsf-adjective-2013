@@ -335,15 +335,17 @@ As a further example of importance of rich linguistic context, compare these thr
 \begin{multicols}{3}
 \eenumsentence{\label{10}
 \item Is Dallas scorching?
+\vspace{-.1in}
 \item It is hot.
 }
 \eenumsentence{\label{11}
 \item Is Dallas hot?
+\vspace{-.1in}
 \item It is hot.
 }
 \eenumsentence{\label{12}
 \item Is Dallas beautiful?
-\vspace{-.15in}
+\vspace{-.45in}
 \item It is hot. 
 }
 \end{multicols}
@@ -359,12 +361,12 @@ A second complication in modeling inferences from scalar arises due to their \te
 %qualities of everyday objects as well as a human tendency to judge people's personal, physical and intellectual traits. Scales for such attributes include a good number of adjectives that each express a different degree of intensity of the shared attribute.
 
 In constructing a formal model of the inferences associated with scalar adjectives, it will be necessary to  \begin{itemize}
-\item [1.] determine which adjective pairs are ``co-scalar'', sharing polarity and all scalar dimensions, and differing only in strength\footnote{Note that the concept of ``polarity'' intended here is the one used in theoretical linguistics rather than the somewhat different concept from sentiment analysis; it refers not to the typical emotional content attached to an expression \cite{wilson2009recognizing} but to the ``directionality'' of a scale in a logical sense \cite{kennedy2001polar}, as diagnosed by the meaning of the comparative form of the adjective.};
+\item [1.] determine which adjective pairs are ``co-scalar'', sharing polarity and all scalar dimensions, and differing only in strength;\footnote{\label{polarity}Note that the concept of ``polarity'' intended here is the one used in theoretical linguistics rather than the different concept from sentiment analysis; it refers not to the positive or negative emotional content associated with an expression \cite{wilson2009recognizing} but to the logical ``directionality'' of a scale, as diagnosed by the meaning of the comparative form of the adjective \cite{kennedy2001polar}.}
 \item [2.]quantify the difference in strength between co-scalar adjective pairs, in order to predict the strength of implicature (cf.\ \emph{warm/hot/scorching});
 \item [3.]determine which adjective pairs overlap partially, differing e.g.\ only in polarity (\emph{cool} vs.\ \emph{warm}) or display partial overlap of dimensions (\emph{big} vs.\ \emph{tall});
 \item [4.] Identify factors which influence the weighting of different dimensions in the contextual meaning of adjectives, e.g., the factors which allow people to infer that height is the relevant size dimension in interpreting \emph{big} when buildings are under discussion, but not when cities are.
 \end{itemize}
-Progress has been made in recent years on the question of determining adjectival polarity \cite{williams2009predicting} and total entailment relations between adjective pairs \cite{sheinman2009adjscales,sheinmanetal2013}. However, there is room for improvement in these methods, in particular by using unsupervised methods for learning lexical relations from parsed corpora rather than hand-specified patterns on raw text (cf. \cite{snow04}). Moreover, there has been virtually no investigation of the other issues that we will consider: the semantic and pragmatic effects of partial scalar overlap, or of the effects of differing scalar distance on the strength of pragmatic inferences. Notably, the use of crowdsourced annotation will be a crucial in enabling us to pursue these fine-grained aspects of lexical structure. This is because quantitative information is needed to discover scalar distance, partial overlap relations, and strength of pragmatic inference in context, and gathering this information requires us to perform statistical analyses on the responses of many annotations of the same text. 
+Progress has been made in recent years in determining adjectival polarity for sentiment analysis \cite{williams2009predicting}, though this type of polarity correlates only weakly with polarity in our formal sense (see fn.\ \ref{polarity}). More directly related, and a direct inspiration, are methods for identifying total entailment relations between adjective pairs developed in \cite{sheinman2009adjscales,sheinmanetal2013}. However, there is room for improvement in these methods, in particular by using unsupervised methods for learning lexical relations from parsed corpora rather than hand-specified patterns on raw text (cf. \cite{snow04}). Moreover, there has been virtually no investigation of the other issues that we will consider: the semantic and pragmatic effects of partial scalar overlap, or of the effects of differing scalar distance on the strength of pragmatic inferences. Notably, the use of crowdsourced annotation will be a crucial in enabling us to pursue these fine-grained aspects of lexical structure. This is because quantitative information is needed to discover scalar distance, partial overlap relations, and strength of pragmatic inference in context, and gathering this information requires us to perform statistical analyses on the responses of many annotations of the same text. 
 
 
 
