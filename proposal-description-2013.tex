@@ -75,8 +75,7 @@ Lexical Inference Patterns for Adjectives in Natural Language}
 \end{center}
 
 
-\section{Introduction}
-\label{intro}
+\section{\label{intro}Introduction}
 Effective human communication relies on the ability of speakers to recover information that is not explicitly expressed in an utterance. According to \cite{graesser1985implicit}'s estimate, 90\% of what 
 is communicated is implicit and must be inferred. \cite{grice1975logic}, in his investigation 
 of the pragmatics of human communication, postulated principles of cooperative 
@@ -266,7 +265,7 @@ Although we will start from the known linguistic literature, our main effort wil
 
 \section{Theoretical Background}
 
-\subsection{Methodological Preliminaries}
+\subsection{Methodological Preliminaries\label{prelim}}
 Much work in modern computational linguistics relies on the creation of annotated datasets focused on one or more related linguistic phenomena. Such gold standard corpora are essential for training and tuning the statistical models on which natural language processing tasks largely rely.
 
 In the development of a gold standard corpus using rich linguistic annotation, it is typical to establish an initial model for the phenomena being studied. This includes a triple, $M = \langle T,R,I \rangle$, consisting of a
@@ -307,7 +306,7 @@ These involve linguistic phenomena (such as the adjective classes studied here) 
 %% Annie's prose revised by Dan 10/9/13
 For practical reasons, the corpora that can be created using linguistically trained annotators are rather limited and rarely exhibit all the combinations of possibly relevant context factors. The result, in many domains, is a lack of data capturing what a rich, human-like understanding of texts should be. This limits the usefulness of many machine learning methods that are widely used in natural language understanding \cite{manning1999foundations,wasserman2004all,murphy2012machine}: sophisticated statistical models cannot produce rich understanding without a linguistically informed understanding of what is being modeled. Our project seeks to use standard annotation, new experimental methods based on crowdsourcing, and corpus studies together in order to address this lacuna for the important and understudied linguistic category of adjectives.
 
-Crowdsourced annotations tasks, when carefully constructed and analyzed, have been shown in previous work to have reliability comparable to traditional expert annotations in some domains including certain RTE tasks \cite{snow2008cheap}. Adopting this method as part of our approach will help us achieve three related goals. First, it makes possible systematic testing of contextual factors that have been claimed in the linguistic literature to be relevant to the inferences licensed by the use of an adjective, as well as patterns isolated on the basis of existing annotations. Second, statistical analysis of the results of larger-scale annotations gathered by experimental means make it possible to reliably identify inferences which are probabilistic, rather than deterministic, in nature; for example, the defesaible inference that someone described as \emph{attractive} is probably not \emph{stunning}. Third, systematic use of untrained annotators will make available data on the interpretations of people with linguistic backgrounds that go beyond those associated with the narrow socioeconomic groups typically involved in standard annotation efforts. 
+Crowdsourced annotations tasks, when carefully constructed and analyzed, have been shown in previous work to have reliability comparable to traditional expert annotations in some domains including certain RTE tasks \cite{snow:08,munroetal2010}. Adopting this method as part of our approach will help us achieve three related goals. First, it makes possible systematic testing of contextual factors that have been claimed in the linguistic literature to be relevant to the inferences licensed by the use of an adjective, as well as patterns isolated on the basis of existing annotations. Second, statistical analysis of the results of larger-scale annotations gathered by experimental means make it possible to reliably identify inferences which are probabilistic, rather than deterministic, in nature; for example, the defesaible inference that someone described as \emph{attractive} is probably not \emph{stunning}. Third, systematic use of untrained annotators will make available data on the interpretations of people with linguistic backgrounds that go beyond those associated with the narrow socioeconomic groups typically involved in standard annotation efforts. 
 
 It is well known that isolating the factors that contribute to the perception of an inference is extremely difficult. Testing contrastive contexts with a large number of native speakers is one way to check whether the hypothesized factors are indeed the ones that are at work and whether they have been circumscribed sufficiently. For instance, from FactBank we learn that 'NP be lucky to VP' has the meaning 'it is highly unlikely that NP VP'. In previous work project consultants Karttunen and Zaenen \cite{karttunen:2012b,zaenen+karttunen:2013} observe that this definition is far too general, and that the ``unlikely'' meaning is mainly found in future-tense sentences. However, they show that the facts are more subtle even when tense is taken into account: in (\ref{lucky-1}), the (a) example has the highly unlikely meaning, whereas the (b) example does not (note that replacing `at least' with `in any case' makes the highly unlikely reading again more prominent).
  \vspace{-.1in}
@@ -889,37 +888,46 @@ $[ A_{int}\; N ] \;  \vDash$ $N'$  where $N \subseteq N'$
 \section{Project Plan}
 %The project consists of three specific aims, as described in section \ref{intro} above: (1) developing an inferential model for adjectival semantics in natural language; (2) connecting this model to data by formulating templates of structure-to-inference mappings using data mining techniques over Web corpora; and (3) revising and enriching the  theoretical model and inference templates by examining the same data ``in the wild", that is,  crowdsourced judgments using larger textual contexts. 
 
-For each of the three adjective classes, we develop structure-to-inference mappings, which are templates associating textual constructions with allowable inferences from the linguistic content. We adapt and enrich the existing inferential models for all three types of adjectives. We then (a) manually select target adjectives, (b) apply regular expressions to the Web so as to extract 
-text snippets containing the target adjectives and (c) construct, on the basis of the data culled from the web, small corpora in the format of {\sc rte} 
-to be annotated by both linguistically trained and non-expert annotators. The former will be the ``Gold" judgments and the latter the ``Wild" judgments. On the basis of these judgments, we revise our models and test them again ``in the wild." 
+For each of the three adjective classes, we develop structure-to-inference mappings, which are templates associating textual constructions with allowable inferences from the linguistic content. We adapt and enrich the existing inferential models for all three types of adjectives. We then (a) select an initial set of target adjectives, (b) extract text snippets from corpora containing the target adjectives, and (c) construct on this basis small corpora in the format of {\sc rte} to be annotated by both linguistically trained and non-expert annotators. 
+%The former will be the ``Gold" judgments and the latter the ``Wild" judgments. On the basis of these judgments, we revise our models and test them again ``in the wild." 
+% Dan: commenting this out since it's been said in other words several times already above.
 
-\paragraph{The Web as corpus.}
-We propose to use the Web as a corpus for the extraction of filled patterns. 
-The principal advantages over corpora like the BNC or COCA  are the size of the Web and access to broad and diverse speaker communities. 
-Frequently cited disadvantages will most likely not affect the proposed work. Non-native or non-standard language, which is characterized by idiosyncratic lexical choices, non-standard morphology and ungrammatical constructions do not apply to the short and fixed patterns of interest. In the case of scalar adjectives, false positives like \textit{makes you rich; if not wealthy enough to build such a house} when the aim is to find the pattern \emph{rich if not wealthy} will be identified as such in 
-a subsequent filtering process using the freely available Stanford parser (\cite{marneffe+maccartney+manning:2006}).
-We expect the Web to yield sufficient data so as to allow us to detect outliers based on non-native or idiosyncratic intuitions. We represent the patterns as regular expression ({\sc re}s) and apply them as search queries to the corpus. 
+\paragraph{Corpus data.}
+We will use a variety of corpus resources, including in some cases the Web, for the extraction of patterns identified as inferentially relevant in the initial model and in subsequent corpus investigations. 
+The advantages and disadvantages of using web data vs.\ smaller, downloadable corpora are well-known.
+In many cases --- especially when dealing with short patterns whose diagnostic usefulness has already been established --- the size and diversity of styles and genres on the web, as and its access to diverse speaker communities, compensates for the increase in noise and the possibility of multiple counts.
+In other cases, it will be necessary to use resources such as BNC, COCA, and Gigaword.
+This is especially true in portions of the project which attempt to use semi- and un-supervised methods to identify patterns of interest, where \textsc{pos}-tagged and parsed data is needed, which can be more difficult to obtain starting with web data (see section \ref{scalar} below).
+In addition, our iterative methodology will eliminate many potential false hits from web data and other sources alike, since patterns will be identified as non-diagnostic by human annotators will be removed or downweighted subsequently.
 
+%a subsequent filtering process using the freely available Stanford parser (\cite{marneffe+maccartney+manning:2006}).
+%We expect the Web to yield sufficient data so as to allow us to detect outliers based on non-native or idiosyncratic intuitions. We represent the patterns as regular expression ({\sc re}s) and apply them as search queries to the corpus. 
 
-To avoid missing tokens that exhibit variations of the target patterns, we formulate the pre-defined, ``strict'' patterns in a way that allows flexibility and apply these in addition to the strict patterns. ``Flexibly'' formulated {\sc re}s will likely result in a higher number of false positives. A solution for maximizing the number of true positives while keeping noise to a minimum  is to process the results and perform {\sc pos} tagging and parsing. But rather than processing the entire corpus or all search results returned for a given query, we minimize the computational cost as follows. Search results generated by the strictly formulated {\sc re}s will be considered as valid examples of the pattern and will be directly included in the dataset for semantic analysis. These false positives will be removed from the results returned by the flexibly formulated {\sc re}s for the same pattern, and only the remaining results will be passed to the parser.
+%To avoid missing tokens that exhibit variations of the target patterns, we formulate the pre-defined, ``strict'' patterns in a way that allows flexibility and apply these in addition to the strict patterns. ``Flexibly'' formulated {\sc re}s will likely result in a higher number of false positives. A solution for maximizing the number of true positives while keeping noise to a minimum  is to process the results and perform {\sc pos} tagging and parsing. But rather than processing the entire corpus or all search results returned for a given query, we minimize the computational cost as follows. Search results generated by the strictly formulated {\sc re}s will be considered as valid examples of the pattern and will be directly included in the dataset for semantic analysis. These false positives will be removed from the results returned by the flexibly formulated {\sc re}s for the same pattern, and only the remaining results will be passed to the parser.
 
-\paragraph{Crowdsourcing.}
-Several studies in the last years have shown that crowd-sourced annotation tasks can deliver reliable results when carefully constructed and analyzed \cite{snow:08,munroetal2010}. 
-As with our preliminary experiments, we will use boto\footnote{http:boto.s3.amazonaws.com}, a Python interface to {\sc aws} (Amazon Web Services), to build an application capable of creating and publishing {\sc hit}s, collecting results and evaluating the judgments from MTurkers. 
-Our approach to soliciting inferences associated with the contextualized interpretation of adjectives relies on judgments of native English speakers, who will provide the core judgments used to enrich initial annotations created by linguists. We will present test questions to ascertain that the workers are native speakers of English, and then ask them to make jud
+\vspace{-.15in}
+\paragraph{Human data: Expert and Experimental Aspects.}
+Several studies in the last years have shown that crowd-sourced annotation tasks can deliver reliable results when carefully constructed and analyzed (cf.\ \cite{snow:08,munroetal2010} and section \ref{prelim} above). 
+The PIs have considerable experience with traditional annotation tasks, and will proceed as usual in this respect.
+%In addition, we will create and publish non-expert annotation tasks as Amazon Mechanical Turk (AMT) {\sc hit}s, relying on 
+%collecting results and evaluating the judgments from MTurkers use boto\footnote{\url{https://github.com/boto/boto}}, a Python interface. 
+ We will present test questions to ascertain that the workers are native speakers of English, and then ask them to make judgments about inferences (both potential entailments and implicatures) with varying amounts of linguistic context.
+Best practices for this new methodology have are not yet firmly established, and we expect that achieving our goals will require us to break new methodological ground in some areas. 
+To do so, we will draw on previous NLP cited above as well as methods developed in recent experimental cognitive science (one of the Stanford co-PI's areas of research, and a field in which the use of AMT for data collection is firmly established).
+Our approach to inferring quantitative patterns of inference as well as inferences associated with specific contexts will rely primarily on this method of data collection, while the traditional annotation tasks will be used as a tool in building AMT tasks and as a sanity check for the results. 
 
- will be asked to make direct inferences, given the text presented to them. 
-
-
-The crowd sourcing techniques for the scalar adjectives serve mainly to measure the relative value of each lexical-semantic pattern as a discriminator for adjectives that express different 
-degrees of a given attribute. 
+%The crowd sourcing techniques for the scalar adjectives serve mainly to measure the relative value of each lexical-semantic pattern as a discriminator for adjectives that express different 
+%degrees of a given attribute. 
 
 %...whereas for the predicative adjectives, the crowdsourcing is essential to discover how the inferential models need to be made sensitive to contextual factors, for the intensional ...
 
-\subsection{Scalar Adjectives}
-We select 100 frequent adjectives with scalar properties expressing different values of twelve different attributes. 
-For adjectives on a given scale, their relative intensity becomes apparent in the context of lexical-semantic patterns. 
-Thus, the patterns "X even Y" and "if not Y, at least X" indicate that \emph{gorgeous} expresses  a greater degree 
+\vspace{-.1in}
+\subsection{\label{scalar}Scalar Adjectives}
+We will begin with experimental and corpus study of two groups of adjectives: a corpus of  100 frequent adjectives with scalar properties expressing different values of twelve different attributes, and a corpus of 300 scalar adjectives for which we have pairwise intensity ratings collected on AMT.\footnote{These data were generously provided by a Stanford colleague, Chris Potts.} Previous work by \citet{sheinman2009adjscales,sheinmanetal2013}, using a methodology closely related to Hearst's \cite{hearst1992automatic}, demonstrated the usefulness of syntactic patterns hand-selected by expert researchers in identifying co-scalarity and relative intensity of adjective pairs. For example, \cite{sheinmanetal2013} showed that when two adjectives $X$ and $Y$ occur sufficiently often in the patterns "$X$, even $Y$" and "if not $Y$, at least $X$", this indicates that $X$ and $Y$ are co-scalar and that $Y$ asymmetrically entails $X$. 
+%
+% Dan: start from here Th PM
+%
+ \emph{gorgeous} expresses  a greater degree 
 of the attribute "beauty" than \emph{pretty}:  \emph{pretty, even gorgeous}; \emph{if not gorgeous, at least 
 pretty}. 
 We represent the patterns as regular expression ({\sc re}s) and apply them as search queries to the corpus, following \cite{sheinman2009adjscales}.
