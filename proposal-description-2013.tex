@@ -250,21 +250,20 @@ The inference from $T$ from $H$ would not be justified here, since it is not kno
 
  \vspace{-.1in}
 \noindent This inference is legitimate because the epistemic scope of the adjective {\it alleged} is the adjective {\it paleolithic}, and not the nominal head  itself (stone). 
-\end{itemize}
 
 %%%
 One of the resources  typically relied upon to improve automatic inferencing based on texts in natural language is supervised or unsupervised annotation of the lexical items occurring in the text. These annotations reflect directly or indirectly the inferential potential that is associated with lexical items. Some aspects of this inferential potential have been studied in detail in the linguistic literature and the computational approaches tend to take the results of these studies for granted. 
 In the case of nouns, the WordNet hierarchies have proved useful in numerous studies (e.g., \cite{snow04}); for verbs, lists of special inference patterns have been constructed starting from the work of \cite{kiparsky+kiparsky:1970,karttunen:1971} by \cite{nairn+condoravdi+karttunen:2006,sauri:2008phd,factbank:2009,lotan:2012}. Information about the inferential properties of adjectives is, however, much less easy to come by. Our preliminary studies show that, for the categories of adjectives that we are interested in, the existing resources have severe shortcomings or are non-existent. One of the reasons is that the contribution of adjectives tends to be more subtle and more dependent to the rest of the linguistic context. This difficulty requires, in our view, a more careful methodology than the one that has been used up to now for syntactic and semantic lexical categorization tasks. The availability of, on the one hand, digital corpora (the biggest one being the Web itself) and, on the other, crowd-sourcing techniques to elicit the judgments of a larger and more diverse group of native speakers allow us to go beyond the narrow base that traditionally lexical studies were based on. Moreover, the development of statistical modeling techniques allow us to test theoretical hypotheses with large datasets. This should allow us to obtain better data to feed into automatic inferencing systems (such as BiuTee \cite{stern+dagan:2011} or \cite{clark2007role}).
  
-Although we will start from the known linguistic literature, our main effort will be focused on corpus-based analysis --- using large corpora drawn from the web such as Google Books and Web1T where appropriate --- and on crowd-sourcing experiments. The combination of these approaches will insure that our results are representative for a larger community of users of English but they will also help us notice textual interactions that tend to be ignored in studies based on linguists' armchair intuitions. It is important to have a solid understanding of these interactions before embarking upon a large scale annotation task: it is only if we can characterize the contribution of the targeted lexical items in its various linguistic contexts securely enough that corpus or lexicon annotation is truly useful. 
+Although we will start from the known linguistic literature, our main effort will be focused on crowd-sourcing experiments and on analysis of a variety of corpus resources, including the web and corpora derived from it. The combination of these approaches will insure that our results are representative for a larger community of users of English but they will also help us notice textual interactions that tend to be ignored in studies based on linguists' armchair intuitions. It is important to have a solid understanding of these interactions before embarking upon a large scale annotation task: it is only if we can characterize the contribution of the targeted lexical items in its various linguistic contexts securely enough that corpus or lexicon annotation is truly useful. 
 %To estimate the contribution of the factors we have isolated we will build statistical models and run them against corpus data. 
 
 %Our methodological changes might seem minor departure from past practice but applying them jointly to the study of one adjective, \emph{lucky}, has found 1. that '{\sc np} is lucky to {\sc vp}' has an idiomatic meaning in the future that was never noticed by formal semanticists or pragmatists (discovered through the consultation of corpora), 2. that in the past lucky can be implicative and not just factive for an important subgroup of native speakers of English (discovered through the web and crowdsourcing), 3. that curated corpora only show the idiomatic meaning of lucky in the future but that the web has many examples of literal meaning in the future as well as in the past, 4. that the two meanings can often be distinguished through co-occuring structural features (discovered through crowdsourcing and model building) (cf. \cite{karttunen:2012b}). 
 %and to the slides of the summer students).
 
-
+\vspace{-.15in}
 \section{Theoretical Background}
-
+\vspace{-.1in}
 \subsection{Methodological Preliminaries\label{prelim}}
 Much work in modern computational linguistics relies on the creation of annotated datasets focused on one or more related linguistic phenomena. Such gold standard corpora are essential for training and tuning the statistical models on which natural language processing tasks largely rely.
 
@@ -459,7 +458,7 @@ Although progress has been made in recent years in determining adjectival polari
 %developed a method for constructing full scales. 
 
 
-\subsection{Inferences of predicative adjectives with clausal complements}
+\subsection{Veridicity: Inferences of adjectives with clausal complements}
 Another class of adjectives that are a rich source of inferences are predicative adjectives with clausal arguments (\emph{that} {\sc s}, \emph{to} {\sc vp}, or \emph{ing} complements). The class comprises hundreds of adjectives whose use communicates an agent's epistemic stance on the likelihood of the (non-)occurrence of the eventualities described by their clausal argument. Some of the adjectives convey, in addition, an emotive or evaluative attitude of the agent. As we discuss below, the inferential classification of this class poses interesting challenges.
 %% With these adjectives the inferences are about the (likelihood of the) occurrence or non-occurrence of the events or states described in the embedded clauses.
 %It is fair to say that WordNet doesn$(Bc`QU(B pay much attention to the predicative use of adjectives. Most examples show the attributive form.  When one is interested in inferences, however, the predicative use can be revealing because 
@@ -894,11 +893,11 @@ For each of the three adjective classes, we develop structure-to-inference mappi
 
 \paragraph{Corpus data.}
 We will use a variety of corpus resources, including in some cases the Web, for the extraction of patterns identified as inferentially relevant in the initial model and in subsequent corpus investigations. 
-The advantages and disadvantages of using web data vs.\ smaller, downloadable corpora are well-known.
-In many cases --- especially when dealing with short patterns whose diagnostic usefulness has already been established --- the size and diversity of styles and genres on the web, as and its access to diverse speaker communities, compensates for the increase in noise and the possibility of multiple counts.
-In other cases, it will be necessary to use resources such as BNC, COCA, and Gigaword.
+The advantages and disadvantages of using web data vs.\ smaller, more carefully controlled corpora are well-known.
+In many cases --- especially when dealing with short patterns whose diagnostic usefulness has already been established --- the size and diversity of styles and genres on the web, as and its access to diverse speaker communities, gives us vital information which compensates for the increase in noise and the possibility of multiple counts.
+In other cases, it will be necessary to use resources such as BNC, COCA, and Gigaword, or to develop methods to use these resources to complement each other.
 This is especially true in portions of the project which attempt to use semi- and un-supervised methods to identify patterns of interest, where \textsc{pos}-tagged and parsed data is needed, which can be more difficult to obtain starting with web data (see section \ref{scalar} below).
-In addition, our iterative methodology will eliminate many potential false hits from web data and other sources alike, since patterns will be identified as non-diagnostic by human annotators will be removed or downweighted subsequently.
+Note further that, where web data is appopriate, our iterative methodology will eliminate many potential false hits from web data and other sources alike, since patterns will be identified as non-diagnostic by human annotators will be removed or downweighted subsequently.
 
 %a subsequent filtering process using the freely available Stanford parser (\cite{marneffe+maccartney+manning:2006}).
 %We expect the Web to yield sufficient data so as to allow us to detect outliers based on non-native or idiosyncratic intuitions. We represent the patterns as regular expression ({\sc re}s) and apply them as search queries to the corpus. 
@@ -911,9 +910,9 @@ Several studies in the last years have shown that crowd-sourced annotation tasks
 The PIs have considerable experience with traditional annotation tasks, and will proceed as usual in this respect.
 %In addition, we will create and publish non-expert annotation tasks as Amazon Mechanical Turk (AMT) {\sc hit}s, relying on 
 %collecting results and evaluating the judgments from MTurkers use boto\footnote{\url{https://github.com/boto/boto}}, a Python interface. 
- We will present test questions to ascertain that the workers are native speakers of English, and then ask them to make judgments about inferences (both potential entailments and implicatures) with varying amounts of linguistic context.
-Best practices for this new methodology have are not yet firmly established, and we expect that achieving our goals will require us to break new methodological ground in some areas. 
-To do so, we will draw on previous NLP cited above as well as methods developed in recent experimental cognitive science (one of the Stanford co-PI's areas of research, and a field in which the use of AMT for data collection is firmly established).
+In constructing analogous tasks on AMT, we will present test questions to ascertain that the workers are native speakers of English, and then ask them to make judgments about inferences (both potential entailments and implicatures) with varying amounts of linguistic context.
+Best practices for AMT annotation are not yet firmly established, and we expect that achieving our goals will require us to explore a variety of approaches.
+To do so, we will draw on previous NLP research cited above as well as methods developed in recent experimental cognitive science (one of the Stanford co-PI's areas of research, and a field in which the use of AMT for data collection is firmly established).
 Our approach to inferring quantitative patterns of inference as well as inferences associated with specific contexts will rely primarily on this method of data collection, while the traditional annotation tasks will be used as a tool in building AMT tasks and as a sanity check for the results. 
 
 %The crowd sourcing techniques for the scalar adjectives serve mainly to measure the relative value of each lexical-semantic pattern as a discriminator for adjectives that express different 
@@ -923,7 +922,9 @@ Our approach to inferring quantitative patterns of inference as well as inferenc
 
 \vspace{-.1in}
 \subsection{\label{scalar}Scalar Adjectives}
-We will begin with experimental and corpus study of two groups of adjectives: a corpus of  100 frequent adjectives with scalar properties expressing different values of twelve different attributes, and a corpus of 300 scalar adjectives for which we have pairwise intensity ratings collected on AMT.\footnote{These data were generously provided by a Stanford colleague, Chris Potts.} Previous work by \citet{sheinman2009adjscales,sheinmanetal2013}, using a methodology closely related to Hearst's \cite{hearst1992automatic}, demonstrated the usefulness of syntactic patterns hand-selected by expert researchers in identifying co-scalarity and relative intensity of adjective pairs. For example, \cite{sheinmanetal2013} showed that when two adjectives $X$ and $Y$ occur sufficiently often in the patterns "$X$, even $Y$" and "if not $Y$, at least $X$", this indicates that $X$ and $Y$ are co-scalar and that $Y$ asymmetrically entails $X$. 
+We will begin with experimental and corpus study of two groups of adjectives: a corpus of  100 frequent adjectives with scalar properties expressing different values of twelve different attributes, and a corpus of 300 scalar adjectives for which we have pairwise intensity ratings collected on AMT. 
+ Previous work by \cite{sheinmanetal2013,sheinman2009adjscales}, using a methodology closely related to Hearst's \cite{hearst1992automatic}, demonstrated the usefulness of syntactic patterns hand-selected by expert researchers in identifying co-scalarity and relative intensity of adjective pairs. 
+For example, \cite{sheinmanetal2013} showed that when two adjectives $X$ and $Y$ occur sufficiently often in the patterns "$X$, even $Y$" and "if not $Y$, at least $X$", this indicates that $X$ and $Y$ are co-scalar and that $Y$ asymmetrically entails $X$. 
 %
 % Dan: start from here Th PM
 %
@@ -1035,7 +1036,8 @@ meaning differences and second, whether the patterns that are better discriminat
 sophisticated and linguistically non-expert speakers. If such differences are found, they are likely to guide the future encoding of scalar adjectives 
 in WordNet and the application of WordNet's data to automatic reasoning tasks, where the aim is to train systems to emulate human reasoning. 
 
-\subsection{Clause-selecting Adjectives}
+\vspace{-.1in}
+\subsection{Veridicity of Adjectival Complement Clauses}
 
 We will select the 100 most frequent adjectives with clausal complements in the en-Ten-Ten corpus. We will extract 1,000 corpus snippets from the Web based on these adjectives with their frame. (A corpus snippet is a text that contains the sentence in which the target adjective with its pattern occurs and the sentence before and the sentence after it. The en-Ten-Ten corpus, unfortunately, doesn’t give enough context). We will balance this corpus so that each adjective occurs at least 10 times. Following the MATTER methodology, linguist annotators will annotate these snippets with their epistemic inference pattern and the factors that are judged to be relevant for this interpretation.
 
@@ -1076,10 +1078,11 @@ The annotators will annotate 1,000 new, naturally occurring snippets. These 1,00
 %
 %The same set of 1,000 snippets will be used without changes in the contexts and submitted to the subjects under the similar conditions as sketched above. This second set will help us isolate the factors that influence judgments in real life. 
 %
-%On the basis of these crowdsourced judgments, we will be able to construct a model of the structural factors that influence readers judgments and revise the initial categorization. We will then develop annotations guidelines for trained annotators. These annotations will capture the factors that play a role in the categorization. The annotators will annotate 1,000 new, naturally occurring snippets. These 1,000 snippets will be annotated by the MTurkers according to the protocol sketched above using the scale (the 7-point or the 3-point one) which gave the most information. We will use these data to estimate how well the factors we have isolated capture the MTurkers data by building statical models. 
+%On the basis of these crowdsourced judgments, we will be able to construct a model of the structural factors that influence readers judgments and revise the initial categorization. We will then develop annotations guidelines for trained annotators. These annotations will capture the factors that play a role in the categorization. The annotators will annotate 1,000 new, naturally occurring snippets. These 1,000 snippets will be annotated by the MTurkers according to the protocol sketched above using the scale (the 7-point or the 3-point one) which gave the most information. We will use these data to estimate how well the factors we have isolated capture the MTurkers data by building statistical models. 
 %
-\subsection{Intensional Adjectives}
 
+\vspace{-.1in}
+\subsection{Intensional Adjectives}
 There are approximately 50 intensional (sub-selective) adjectives that we have identified, from which we will select the most frequent 30 for our investigation. Fewer than 10 of these are root adjectives ({\it superficial}, {\it putative}), and most are participial adjectival derivations, such as {\it alleged}, {\it supposed}, and {\it believed}. For each adjective, we have extracted 100 snippets from the corpus, where snippets are three-sentence fragments from the text. This gives us a corpus of 3,000 snippets for intensional adjectives. 
 
 We will develop an initial classification of 1,000 of these adjectives based on the inferential patterns discussed in the previous section; i.e., wide-scope, narrow-scope, and hypernym readings. 
@@ -1100,11 +1103,10 @@ Wide-Scope Reading: \\
 (T):  She was soon tried and executed in June by South Korea as an {\bf alleged spy}.
 \\
 (H): She was a spy. 
-
 \label{int-pattern2}
 }
 
- \noindent We submit these stimuli to MTurkers  with the same guidelines as those given to the linguists. 
+ \noindent We submit these stimuli to AMT workers with the same guidelines as those given to the linguists. 
  
  We then submit the remaining 2,000 snippets to both linguists and MTurkers, and examine the differences in judgments. That is, for those cases that do not accord with the pre-assigned classification, we try to isolate the factors contributing to when the judgment goes against the expected inference. 
  To this end, we perform a statistical analysis of the contexts of the adjective for both the cases that are in accordance with the classification and the cases that are not. 
