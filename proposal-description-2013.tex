@@ -142,7 +142,7 @@ in order to both: (a) test the applicability of the methodology to different sem
 adjectives, showing varying implications of veridicity over a clausal complement, e.g., \textit{rude, annoying, likely}, etc.; and (iii) intensional adjectives, introducing implications of modal subordination, e.g., \textit{alleged, supposed, so-called}. The work will result in a small Gold standard inference  corpus created by using a standard linguistic annotation effort following explicit guidelines indicating the structure-to-inference mapping for each type of adjective. However, contrary to most previous corpus annotation efforts, this standard is not the end product to be used in {\sc ml}: we will compare these baseline structure-to-inference mappings to inferential judgments made by non-expert native speakers, such as Mechanical Turk workers (MTurkers). Our preliminary studies lead us to expect that there will be variance from the baseline. We hypothesize that an important part of this variance is caused by textual factors that are abstracted away in linguistic studies, but are important to explain the non-expert judgments. We will use these differential measurements in judgment (trained linguist vs.\ non-expert annotator) 
 to classify inferences according to how stable they are regardless of linguistic context and which (if any) contextual factors contribute to blocking the inference. On the basis of this study, we will develop an improved gold standard and test it again with non-expert native speakers. We will then build a model to gauge how well our distinctions explain the behavior of these speakers. Our approach will allow us to account for the interactions of different structural and lexical factors instead of seeing them as independent from each other. 
 
-The contributions of this research are significant to the computational linguistics community in two major respects.  First, they lay the theoretical and  methodological groundwork for a large-scale annotation of adjectives in order to support automatic systems in inferencing tasks. More importantly, , they contribute to a more sophisticated theory of the contribution of lexical information to inferencing. By studying the way inferences are made ``in the wild" and how these differ from baseline expectations established from gold standard corpora, we can begin to identify the pragmatic factors contributing to the interpretation of lexical items in richer linguistic contexts.
+The contributions of this research are significant to the computational linguistics community in two major respects.  First, they lay theoretical and methodological groundwork for a large-scale annotation of adjectives in order to support automatic systems in inferencing tasks. Second, they contribute to a more sophisticated theory of the contribution of lexical information to inferencing. By studying inferencing ``in the wild" and how it differs from the baseline established from gold standard corpora, we can begin to identify the pragmatic factors contributing to the interpretation of lexical items in richer linguistic contexts.
 
 
  %To illustrate the utility and enabling power of this work, consider the following.
@@ -153,20 +153,18 @@ The contributions of this research are significant to the computational linguist
 %Adjectives can be divided into different classes, depending on what dimensions of analysis are being used.
 
  Classic 
-semantic field analysis (cf. \cite{dixon:91,lyons:77,raskin1995lexical})   categorizes the attributes denoted by adjectives according to a thematic organization, centered around a human frame-of-reference, as lexically encoded in  the language, such the following classes:\footnote{It should be noted that \cite{raskin1995lexical} , however, also discuss inferential patterns for distinct classes.}
+semantic field analysis (cf. \cite{dixon:91,lyons:77,raskin1995lexical}) categorizes the attributes denoted by adjectives according to a thematic organization, centered around a human frame-of-reference, as lexically encoded in  the language, such the following classes:\footnote{It should be noted that \cite{raskin1995lexical} , however, also discuss inferential patterns for distinct classes.}
 {\sc dimension}, 
 {\sc physical property}, {\sc color}, {\sc emotions}, {\sc temporal}
 {\sc spatial}
 {\sc value},
 {\sc manner}. 
-
 \noindent 
 %As intuitive as these classes might be for organizing aspects of the lexis of a language, they fail to provide a coherent guide to the inferential patterns associated with adjectival modification. 
-An alternative approach is to adopt a conceptually conservative but more formally descriptive and operational distinction, one which groups adjectives into inferential classes. \cite{amoia2006adjective} and \cite{amoia2008test}, following \cite{Kamp75twotheories} and \cite{Kamp95prototypetheory}, make just such a move, adopting a four class distinction based on inferential properties of the adjective:
- \vspace{-.1in}
+An alternative approach is to adopt a conceptually conservative but more formally descriptive and operational distinction which groups adjectives into inferential classes. \cite{amoia2006adjective,amoia2008test} make just such a move, adopting a four class distinction based on inferential properties noted by \cite{Kamp75twotheories,Kamp95prototypetheory}:
 
 
-\vspace {-2mm}
+\vspace {-3mm}
 
 
  \enumsentence{
@@ -181,10 +179,8 @@ c. {\sc privative}: the object described is not an N, by virtue of A.
 \\
 d. {\sc non-subsective}: there is epistemic uncertainty whether the object is N.  
 }
-\vskip -.1in
 
-
-\vspace {-2mm}
+\vspace {-2.5mm}
 
 
 \noindent These constructions   constitute  patterns that license specific inferences associated with classes of adjectives, and  can be exploited  
@@ -475,7 +471,7 @@ In constructing a formal model of the inferences associated with scalar adjectiv
 \item [4.] Identify factors which influence the weighting of different dimensions in the contextual meaning of adjectives, e.g., the factors which allow people to infer that height is the relevant size dimension in interpreting \emph{big} when buildings are under discussion, but not when cities are.
 \end{itemize}
  \vspace{-.05in}
-Although progress has been made in recent years in determining adjectival polarity for sentiment analysis \cite{williams2009predicting}, this type of polarity correlates only weakly with polarity in our formal sense (see fn.\ \ref{polarity}). More directly related, and a direct inspiration for the current project, are methods for identifying total entailment relations between adjective pairs developed in \cite{sheinman2009adjscales,sheinmanetal2013}. However, there is room for improvement in these methods, in particular by using semi- and un-supervised methods for learning lexical relations from parsed corpora rather than hand-specified patterns on raw text (cf. \cite{snow04,davidov2008unsupervised,turney2008uniform}). Moreover, there has been virtually no investigation of the other issues that we will consider: the semantic and pragmatic effects of partial scalar overlap, or of the effects of differing scalar distance on the strength of pragmatic inferences. Notably, the use of crowdsourced annotation will be a crucial in enabling us to pursue these fine-grained aspects of lexical structure. This is because quantitative information is needed to discover scalar distance, partial overlap relations, and strength of pragmatic inference in context, and gathering this information requires us to perform statistical analyses on the responses of many annotations of the same text. 
+Although progress has been made in recent years in determining adjectival polarity for sentiment analysis \cite{williams2009predicting}, this type of polarity correlates only weakly with polarity in our formal sense (see fn.\ \ref{polarity}). More directly related, and a direct inspiration for the current project, are methods for identifying total entailment relations between adjective pairs developed in \cite{sheinman2009adjscales,sheinmanetal2013}. However, there is room for improvement in these methods, in particular by using semi- and un-supervised methods for learning lexical relations from parsed corpora rather than hand-specified patterns on raw text (cf. \cite{snow04,davidov2008unsupervised,turney2008uniform}). Moreover, there has been virtually no investigation of the other issues that we will consider: the semantic and pragmatic effects of partial scalar overlap, or of the effects of differing scalar distance on the strength of pragmatic inferences. Notably, the use of crowdsourced annotation will be a crucial in enabling us to pursue these fine-grained aspects of lexical structure. This is because quantitative information is needed to discover scalar distance, partial overlap relations, and strength of pragmatic inference in context, and gathering this information requires us to perform statistical analyses on the responses of many annotators.
 
 
 
