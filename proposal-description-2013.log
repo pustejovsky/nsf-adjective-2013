@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 OCT 2013 23:21
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  13 OCT 2013 21:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**proposal-description-2013
-(./proposal-description-2013
+**proposal-description-2013.tex
+(./proposal-description-2013.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -178,184 +178,228 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 \c@enumsi=\count91
 \eeindent=\dimen115
 )
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count92
+\mult@box=\box26
+\multicol@leftmargin=\dimen116
+\c@unbalance=\count93
+\c@collectmore=\count94
+\doublecol@number=\count95
+\multicoltolerance=\count96
+\multicolpretolerance=\count97
+\full@width=\dimen117
+\page@free=\dimen118
+\premulticols=\dimen119
+\postmulticols=\dimen120
+\multicolsep=\skip46
+\multicolbaselineskip=\skip47
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count98
+\c@finalcolumnbadness=\count99
+\last@try=\dimen121
+\multicolovershoot=\dimen122
+\multicolundershoot=\dimen123
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\multicol@sort@counter=\count100
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen124
+\WF@size=\dimen125
+\c@WF@wrappedlines=\count101
+\WF@box=\box52
+\WF@everypar=\toks18
+Package: wrapfig 2003/01/31  v 3.6
+)
 (./proposal-description-2013.aux)
 \openout1 = `proposal-description-2013.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 67.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
-\scratchdimen=\dimen116
-\scratchbox=\box26
-\nofMPsegments=\count93
-\nofMParguments=\count94
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count95
-\MPscratchDim=\dimen117
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
-\everyMPtoPDFconversion=\toks19
+\scratchcounter=\count102
+\scratchdimen=\dimen126
+\scratchbox=\box53
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen127
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
+\everyMPtoPDFconversion=\toks20
 )
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 68.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 72.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 76.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 102.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 80.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 110.
 
  (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
  [1
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 144.
+LaTeX Font Info:    Try loading font information for U+msa on input line 154.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 144.
+LaTeX Font Info:    Try loading font information for U+msb on input line 154.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [2]
-Overfull \hbox (1.30006pt too wide) in paragraph at lines 178--178
+)
+Overfull \hbox (1.30006pt too wide) in paragraph at lines 205--205
 [] []\OT1/ppl/m/n/10 Adjectives with clausal com-ple-ments: ad-jec-tives such a
 s \OT1/ppl/m/it/10 an-noy-ing \OT1/ppl/m/n/10 and \OT1/ppl/m/it/10 nice\OT1/ppl
 /m/n/10 , when gov-ern-ing clausal
  []
 
+[2]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 191.
-[3] <matter.pdf, id=17, 369.38pt x 223.83624pt>
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 212.
+ [3] <matter.pdf, id=17, 369.38pt x 223.83624pt>
 File: matter.pdf Graphic file (type pdf)
  <use matter.pdf>
-Package pdftex.def Info: matter.pdf used on input line 256.
+Package pdftex.def Info: matter.pdf used on input line 325.
 (pdftex.def)             Requested size: 369.37909pt x 223.8357pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4] [5 <./matter.pdf>] [6] [7]
+ [4 <./matter.pdf>] [5] [6] [7] [8]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 622.
- [8] [9] [10] [11] [12]
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
- [13] [14]
-Overfull \hbox (0.24498pt too wide) in paragraph at lines 1112--1137
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 757.
+ [9] [10] [11]
+Missing character: There is no Õ in font pplr7t!
+Missing character: There is no Õ in font pplr7t!
+ [12] [13]
+Overfull \hbox (0.24498pt too wide) in paragraph at lines 1268--1293
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1112--1137
+Underfull \hbox (badness 10000) in paragraph at lines 1268--1293
 
  []
 
 
-Overfull \hbox (0.24498pt too wide) in paragraph at lines 1141--1165
+Overfull \hbox (0.24498pt too wide) in paragraph at lines 1297--1321
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1141--1165
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1321
 
  []
 
 
-Overfull \hbox (0.24498pt too wide) in paragraph at lines 1169--1194
+Overfull \hbox (0.24498pt too wide) in paragraph at lines 1325--1350
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1169--1194
+Underfull \hbox (badness 10000) in paragraph at lines 1325--1350
 
  []
 
-[15]
+[14] [15]
 
-LaTeX Warning: Citation `cieri-etal' on page D--16 undefined on input line 1225
+LaTeX Warning: Citation `cieri-etal' on page D--16 undefined on input line 1405
 .
 
 
-Overfull \hbox (1.47044pt too wide) in paragraph at lines 1222--1226
+Overfull \hbox (1.47044pt too wide) in paragraph at lines 1402--1406
 \OT1/ppl/m/n/10 James Puste-jovsky) 9/2008-8/2013; $503,620. This col-lab-o-ra-
 tive ef-fort with the EU-funded FLaReNet project
  []
 
-[16] [17] (./proposal-description-2013.bbl
+[16] (./proposal-description-2013.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 5.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [1]
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no œ in font pplr7t!
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no “ in font pplr7t!
+)
+Missing character: There is no Ò in font pplr7t!
+Missing character: There is no Ð in font pplr7t!
+ [1]
+Missing character: There is no Ô in font pplr7t!
+Missing character: There is no Õ in font pplr7t!
  [2]
 [3]
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no “ in font pplr7t!
+Missing character: There is no Ð in font pplr7t!
 ) [4] (./proposal-description-2013.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2350 strings out of 493488
- 32892 string characters out of 3141326
- 89500 words of memory out of 3000000
- 5584 multiletter control sequences out of 15000+200000
- 24936 words of font info for 70 fonts, out of 3000000 for 9000
+ 2522 strings out of 493488
+ 35266 string characters out of 3141326
+ 94706 words of memory out of 3000000
+ 5750 multiletter control sequences out of 15000+200000
+ 23871 words of font info for 68 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,10n,24p,1525b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,10n,24p,1583b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
-ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
-2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
-2/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2012/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2012/texm
-f-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2012/texmf-dist/
-fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/
-type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/u
-rw/palatino/uplri8a.pfb>
-Output written on proposal-description-2013.pdf (21 pages, 255841 bytes).
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
+12/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/
+2012/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2012/texmf-
+dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2012/texmf-dist/f
+onts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
+pe1/urw/palatino/uplri8a.pfb>
+Output written on proposal-description-2013.pdf (20 pages, 238555 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
+ 162 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

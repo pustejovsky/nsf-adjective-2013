@@ -20,22 +20,10 @@ M.~Amoia, C.~Gardent, et~al.
 Collin~F. Baker and Christiane Fellbaum.
 \newblock Wordnet and framenet as complementary resources for annotation, 2009.
 
-\bibitem{baldridge2005probabilistic}
-Jason Baldridge and Alex Lascarides.
-\newblock Probabilistic head-driven parsing for discourse structure.
-\newblock In {\em Proceedings of the Ninth Conference on Computational Natural
-  Language Learning}, pages 96--103. Association for Computational Linguistics,
-  2005.
-
 \bibitem{barker:2002}
 Chris Barker.
 \newblock The dynamics of vagueness.
 \newblock {\em Linguistics and Philosophy}, 25(1):1--36, 2002.
-
-\bibitem{bierwisch1989semantics}
-M.~Bierwisch.
-\newblock The semantics of gradation.
-\newblock {\em Dimensional adjectives}, 71:261, 1989.
 
 \bibitem{chiarcosinpress}
 C.~Chiarcos, J.~McCrae, P.~Cimiano, and C.~Fellbaum.
@@ -43,10 +31,10 @@ C.~Chiarcos, J.~McCrae, P.~Cimiano, and C.~Fellbaum.
 \newblock In {\em New Trends of Research in Ontologies and Lexical Resources}.
   Springer, New York, in press.
 
-\bibitem{chklovski2004verbocean}
-T.~Chklovski and P.~Pantel.
-\newblock Verbocean: Mining the web for fine-grained semantic verb relations.
-\newblock In {\em Proceedings of EMNLP}, volume~4, pages 33--40, 2004.
+\bibitem{clark1996using}
+Herbert~H Clark.
+\newblock {\em Using language}, volume~4.
+\newblock Cambridge University Press Cambridge, 1996.
 
 \bibitem{clark2008using}
 P.~Clark, C.~Fellbaum, and J.~Hobbs.
@@ -70,26 +58,26 @@ Ido Dagan, Oren Glickman, and Bernardo Magnini.
 \newblock The {\sc pascal} recognising textual entailment challenge.
 \newblock In {\em MLCW}, pages 177--190, 2005.
 
+\bibitem{davidov2008unsupervised}
+Dmitry Davidov and Ari Rappoport.
+\newblock Unsupervised discovery of generic relationships using pattern
+  clusters and its evaluation by automatically generated sat analogy questions.
+\newblock In {\em Proceedings of ACL-08: HCL}, pages 692--700, 2008.
+
 \bibitem{demarneff+manning+potts:2012}
 Marie-Catharine de~Marneffe, Christopher~D. Manning, and Christopher Potts.
 \newblock Did it happen? {T}he pragmatic complexity of veridicality assessment.
 \newblock {\em Computational Linguistics}, 38:301--333, 2012.
 
-\bibitem{marneffe+maccartney+manning:2006}
-Marie-Catherine de~Marneffe, Bill MacCartney, and Christopher~D. Manning.
+\bibitem{de2006generating}
+Marie-Catherine De~Marneffe, Bill MacCartney, Christopher~D Manning, et~al.
 \newblock Generating typed dependency parses from phrase structure parses.
-\newblock In {\em LREC 2006}. 2006.
+\newblock In {\em Proceedings of LREC}, volume~6, pages 449--454, 2006.
 
 \bibitem{demelo2012}
 G.~de~Melo, C.~Baker, N.~Ide, R.~Passonneau, and C.~Fellbaum.
 \newblock Empirical comparisons of {\sc masc} word sense annotations.
 \newblock In {\em Proceedings of LREC, Istanbul, Turkey}, 2012.
-
-\bibitem{dixon1982have}
-R.M.W. Dixon.
-\newblock {\em Where have all the adjectives gone?: and other essays in
-  semantics and syntax}, volume 107.
-\newblock De Gruyter Mouton, 1982.
 
 \bibitem{dixon:91}
 R.M.W. Dixon.
@@ -115,34 +103,25 @@ Christiane Fellbaum and Collin Baker.
 
 \bibitem{bakerfellbaum2008}
 Christiane Fellbaum and Collin~F. Baker.
-\newblock Can {W}ord{N}et and {F}rame{N}et be made â€œinteroperable?
+\newblock Can {W}ord{N}et and {F}rame{N}et be made Òinteroperable?
 \newblock In {\em Proceedings of The First International Conference on Global
-  Interoperability for Language Resources}, page 67â€“74, 2008.
+  Interoperability for Language Resources}, page 67Ð74, 2008.
 
 \bibitem{fellbaumvossen2012}
 Christiane Fellbaum and Piek Vossen.
 \newblock Challenges for a multilingual {W}ord{N}et.
 \newblock {\em Language Resources and Evaluation}, 46(2):313--326, 2012.
 
-\bibitem{feng2012text}
-Vanessa~Wei Feng and Graeme Hirst.
-\newblock Text-level discourse parsing with rich linguistic features.
-\newblock In {\em Proceedings of the 50th Annual Meeting of the Association for
-  Computational Linguistics: Long Papers-Volume 1}, pages 60--68. Association
-  for Computational Linguistics, 2012.
+\bibitem{frank2012predicting}
+Michael~C Frank and Noah~D Goodman.
+\newblock Predicting pragmatic reasoning in language games.
+\newblock {\em Science}, 336(6084):998--998, 2012.
 
-\bibitem{forbes2003}
-Katherine Forbes, Eleni Miltsakaki, Rashmi Prasad, Anoop Sarkar, Aravind Joshi,
-  and Bonnie Webber.
-\newblock D-ltag system: Discourse parsing with a lexicalized tree-adjoining
-  grammar.
-\newblock {\em Journal of Logic, Language and Information}, 12(3):261--279,
-  2003.
-
-\bibitem{frawley1992linguistic}
-W.~Frawley.
-\newblock {\em Linguistic semantics.}
-\newblock Lawrence Erlbaum Associates, Inc, 1992.
+\bibitem{goodman2013knowledge}
+Noah~D Goodman and Andreas Stuhlm{\"u}ller.
+\newblock Knowledge and implicature: Modeling language understanding as social
+  cognition.
+\newblock {\em Topics in cognitive science}, 5(1):173--184, 2013.
 
 \bibitem{graesser1985implicit}
 A.C. Graesser and S.M. Goodman.
@@ -155,23 +134,32 @@ H.P. Grice.
 \newblock Logic and conversation.
 \newblock pages 64--75, 1975.
 
-\bibitem{hatzivassiloglou1997predicting}
-V.~Hatzivassiloglou and K.R. McKeown.
-\newblock Predicting the semantic orientation of adjectives.
-\newblock In {\em Proceedings of the eighth conference on European chapter of
-  the Association for Computational Linguistics}, pages 174--181. Association
-  for Computational Linguistics, 1997.
+\bibitem{hanna2003effects}
+Joy~E Hanna, Michael~K Tanenhaus, and John~C Trueswell.
+\newblock The effects of common ground and perspective on domains of
+  referential interpretation.
+\newblock {\em Journal of Memory and Language}, 49(1):43--61, 2003.
 
-\bibitem{hernault2010hilda}
-Hugo Hernault, Helmut Prendinger, Mitsuru Ishizuka, et~al.
-\newblock Hilda: a discourse parser using support vector machine
-  classification.
-\newblock {\em Dialogue \& Discourse}, 1(3), 2010.
+\bibitem{hearst1992automatic}
+Marti Hearst.
+\newblock Automatic acquisition of hyponyms from large text corpora.
+\newblock In {\em Proceedings of the Fourteenth International Conference on
+  Computational Linguistics}. 1992.
 
 \bibitem{hirschberg1991theory}
 Julia Hirschberg.
 \newblock {\em A Theory of Scalar Implicature}.
 \newblock Garland Press, 1991.
+
+\bibitem{hobbs1993interpretation}
+Jerry~R Hobbs, Mark~E Stickel, Douglas~E Appelt, and Paul Martin.
+\newblock Interpretation as abduction.
+\newblock {\em Artificial Intelligence}, 63(1):69--142, 1993.
+
+\bibitem{horn89}
+Laurence Horn.
+\newblock {\em A natural history of negation}.
+\newblock The University of Chicago Press, 1989.
 
 \bibitem{horn2000pick}
 L.R. Horn.
@@ -207,9 +195,16 @@ Lauri Karttunen.
 \newblock Implicative verbs.
 \newblock {\em Language}, 47:340--358, 1971.
 
+\bibitem{karttunen:2012b}
+Lauri Karttunen.
+\newblock You will be lucky to break even.
+\newblock In Tracy~Holloway King and Valeria dePaiva, editors, {\em From Quirky
+  Case to Representing Space: Papers in Honor of Annie Zaenen}, pages 167--180.
+  CSLI Publications, Stanford, CA, 2012.
+
 \bibitem{csli-gang-cil13}
 Lauri Karttunen, Cleo Condoravdi, Miriam Connor, Stuart Melton, Kenny Moran,
-  Marianne Naval, Stanley Peters, and Tania Rojas-Espondaand~Annie Zaenen.
+  Marianne Naval, Stanley Peters, Tania Rojas-Esponda, and Annie Zaenen.
 \newblock Double meaning: {A} systematic empirical study.
 \newblock Paper presented at the 20th International Congress of Linguists, July
   2013.
@@ -220,6 +215,11 @@ Lauri Karttunen, Annie Zaenen, Cleo Condoravdi, and Stanley Peters.
   uses of factive adjectives.
 \newblock Paper presented at the Colloque de Syntaxe et S\'emantique \`a Paris
   (CSSP), September 2013.
+
+\bibitem{kennedy2001polar}
+Christopher Kennedy.
+\newblock Polar opposition and the ontology of ÔdegreesÕ.
+\newblock {\em Linguistics and philosophy}, 24(1):33--70, 2001.
 
 \bibitem{kiparsky+kiparsky:1970}
 Paul Kiparsky and Carol Kiparsky.
@@ -238,14 +238,11 @@ John Lyons.
 \newblock {\em Semantics}.
 \newblock Cambridge University Press, 1977.
 
-\bibitem{maasmulti}
-A.L. Maas, A.Y. Ng, and C.~Potts.
-\newblock Multi-dimensional sentiment analysis with learned representations.
-
-\bibitem{mathieu2010verbs}
-Y.Y. Mathieu and C.~Felbaum.
-\newblock Verbs of emotion in {F}rench and {E}nglish.
-\newblock {\em Proceedings of GWC-2010, Mumbai, India}, 2010.
+\bibitem{manning1999foundations}
+Christopher~D Manning and Hinrich Sch{\"u}tze.
+\newblock {\em Foundations of statistical natural language processing}, volume
+  999.
+\newblock MIT Press, 1999.
 
 \bibitem{mindt:2011}
 Ilka Mindt.
@@ -259,6 +256,11 @@ Robert Munro, Steven Bethard, Victor Kuperman, Vicky~Tzuyin Lai, Robin Melnick,
 \newblock Crowdsourcing and language studies: the new generation of linguistic
   data.
 \newblock 2010.
+
+\bibitem{murphy2012machine}
+Kevin~P Murphy.
+\newblock {\em Machine learning: a probabilistic perspective}.
+\newblock The MIT Press, 2012.
 
 \bibitem{nairn+condoravdi+karttunen:2006}
 Rowan Nairn, Cleo Condoravdi, and Lauri Karttunen.
@@ -277,11 +279,10 @@ Neal~R. Norrick.
 \newblock {\em Factive Adjectives and the Theory of Factivity}.
 \newblock Niemeyer, 1978.
 
-\bibitem{polanyi2004rule}
-Livia Polanyi, Chris Culy, Martin Van Den~Berg, Gian~Lorenzo Thione, and David
-  Ahn.
-\newblock A rule based approach to discourse parsing.
-\newblock In {\em Proceedings of SIGDIAL}, volume~4, 2004.
+\bibitem{piantadosi2012communicative}
+Steven~T Piantadosi, Harry Tily, and Edward Gibson.
+\newblock The communicative function of ambiguity in language.
+\newblock {\em Cognition}, 122(3):280--291, 2012.
 
 \bibitem{pustejovsky2012natural}
 James Pustejovsky and Amber Stubbs.
@@ -325,31 +326,36 @@ V.~Sheinman and T.~Tokunaga.
 \newblock {\em IEICE TRANSACTIONS on Information and Systems},
   92(8):1542--1550, 2009.
 
+\bibitem{snow04}
+Rion Snow, Daniel Jurafsky, and Andrew~Y Ng.
+\newblock Learning syntactic patterns for automatic hypernym discovery.
+\newblock {\em Advances in Neural Information Processing Systems 17}, 2004.
+
+\bibitem{snow2006semantic}
+Rion Snow, Daniel Jurafsky, and Andrew~Y Ng.
+\newblock Semantic taxonomy induction from heterogenous evidence.
+\newblock In {\em Proceedings of the 21st International Conference on
+  Computational Linguistics and the 44th annual meeting of the Association for
+  Computational Linguistics}, pages 801--808. Association for Computational
+  Linguistics, 2006.
+
 \bibitem{snow:08}
 Rion Snow, Brendan O'Connor, Daniel Jurafsky, and Andrew~Y. Ng.
 \newblock Cheap and fast - but is it good? {E}valuating non-expert annotations
   for natural language tasks.
 \newblock In {\em Proceedings of EMNLP}, 2008.
 
-\bibitem{soricut2003sentence}
-Radu Soricut and Daniel Marcu.
-\newblock Sentence level discourse parsing using syntactic and lexical
-  information.
-\newblock In {\em Proceedings of the 2003 Conference of the North American
-  Chapter of the Association for Computational Linguistics on Human Language
-  Technology-Volume 1}, pages 149--156. Association for Computational
-  Linguistics, 2003.
-
 \bibitem{stern+dagan:2011}
 Asher Stern and Ido Dagan.
 \newblock A confidence model for syntactically-motivated entailment proofs.
 \newblock In {\em Proceedings of RANLP 2011}. 2011.
 
-\bibitem{turney2003measuring}
-P.~Turney and M.L. Littman.
-\newblock Measuring praise and criticism: Inference of semantic orientation
-  from association.
-\newblock 2003.
+\bibitem{turney2008uniform}
+Peter Turney.
+\newblock A uniform approach to analogies, synonyms, antonyms, and
+  associations.
+\newblock {\em Proceedings of the 22nd International Conference on
+  Computational Linguistics (Coling 2008)}, pages 905--912, 2008.
 
 \bibitem{vanlinden+davidse:2009}
 An~{Van linden} and Kristin Davidse.
@@ -363,7 +369,7 @@ Marc Verhagen, Robert Gaizauskas, Frank Schilder, Mark Hepple, Graham Katz, and
   James Pustejovsky.
 \newblock Semeval-2007 task 15: Tempeval temporal relation identification.
 \newblock In {\em Proceedings of the Fourth International Workshop on Semantic
-  Evaluations (SemEval- 2007)}, page 75â€“80, Prague, Czech Republic, 2007.
+  Evaluations (SemEval- 2007)}, page 75Ð80, Prague, Czech Republic, 2007.
   Association for Computational Linguistics.
 
 \bibitem{verhagen-pustejovsky:2007:Interoperability}
@@ -378,10 +384,26 @@ Marc Verhagen, Amber Stubbs, and James Pustejovsky.
   109--112, Prague, Czech Republic, June 2007. Association for Computational
   Linguistics.
 
+\bibitem{wasserman2004all}
+Larry Wasserman.
+\newblock {\em All of statistics: a concise course in statistical inference}.
+\newblock Springer, 2004.
+
 \bibitem{wilkinson:1970}
 Robert Wilkinson.
 \newblock Factive complements and action complements.
 \newblock In {\em CLS 6}, pages 425--444, 1970.
+
+\bibitem{williams2009predicting}
+Gbolahan~K Williams and Sarabjot~Singh Anand.
+\newblock Predicting the polarity strength of adjectives using wordnet.
+\newblock In {\em ICWSM}, 2009.
+
+\bibitem{wilson2009recognizing}
+Theresa Wilson, Janyce Wiebe, and Paul Hoffmann.
+\newblock Recognizing contextual polarity: An exploration of features for
+  phrase-level sentiment analysis.
+\newblock {\em Computational linguistics}, 35(3):399--433, 2009.
 
 \bibitem{zaenen+karttunen:2013}
 Annie Zaenen and Lauri Karttunen.

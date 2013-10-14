@@ -4,63 +4,62 @@ The top-level auxiliary file: proposal-description-2013.aux
 The style file: plain.bst
 Database file #1: propbib.bib
 Warning--entry type for "bakerfellbaum2009" isn't style-file defined
---line 77 of file propbib.bib
-Repeated entry---line 615 of file propbib.bib
+--line 85 of file propbib.bib
+Warning--I'm ignoring kennedy2001polar's extra "title" field
+--line 252 of file propbib.bib
+Repeated entry---line 811 of file propbib.bib
  : @article{sheinmanetal2013
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 935 of file propbib.bib
+Repeated entry---line 1131 of file propbib.bib
  : @inproceedings{bakerfellbaum2009
  :                                 ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "cieri-etal"
 Warning--to sort, need author or key in rte
-Warning--empty publisher in marneffe+maccartney+manning:2006
 Warning--empty journal in grice1975logic
-Warning--empty journal in maasmulti
-Warning--empty year in maasmulti
+Warning--empty publisher in hearst1992automatic
 Warning--empty journal in munroetal2010
 Warning--empty publisher in stern+dagan:2011
-Warning--empty journal in turney2003measuring
-You've used 68 entries,
+You've used 73 entries,
             2118 wiz_defined-function locations,
-            860 strings with 15393 characters,
-and the built_in function-call counts, 23271 in all, are:
-= -- 2288
-> -- 1052
+            899 strings with 16135 characters,
+and the built_in function-call counts, 24775 in all, are:
+= -- 2440
+> -- 1090
 < -- 28
-+ -- 426
-- -- 346
-* -- 1391
-:= -- 3728
-add.period$ -- 218
-call.type$ -- 68
-change.case$ -- 365
++ -- 443
+- -- 356
+* -- 1502
+:= -- 3976
+add.period$ -- 232
+call.type$ -- 73
+change.case$ -- 381
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 1016
-empty$ -- 1893
-format.name$ -- 346
-if$ -- 5069
+cite$ -- 78
+duplicate$ -- 1073
+empty$ -- 2038
+format.name$ -- 356
+if$ -- 5380
 int.to.chr$ -- 0
-int.to.str$ -- 68
-missing$ -- 68
-newline$ -- 340
-num.names$ -- 136
-pop$ -- 509
+int.to.str$ -- 73
+missing$ -- 76
+newline$ -- 366
+num.names$ -- 148
+pop$ -- 522
 preamble$ -- 1
-purify$ -- 306
+purify$ -- 320
 quote$ -- 0
-skip$ -- 756
+skip$ -- 787
 stack$ -- 0
-substring$ -- 1180
-swap$ -- 293
+substring$ -- 1342
+swap$ -- 296
 text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 256
-warning$ -- 8
-while$ -- 213
-width$ -- 70
-write$ -- 729
+type$ -- 270
+warning$ -- 5
+while$ -- 234
+width$ -- 75
+write$ -- 786
 (There were 2 error messages)
