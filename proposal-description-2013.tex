@@ -449,7 +449,7 @@ annotations create corresponding gold standards, from which we perform context-b
 \vspace {-3mm}
 
 
-Human language understanding involves active reconstruction of information which is merely implicit in an utterance, or which can be reconstructed on the basis of an utterance together with its linguistic, social, and worldly context \cite{grice1975logic,hobbs1993interpretation,clark1996using,hanna2003effects,piantadosi2012communicative}.
+As discussed in the introduction, language understanding requires active reconstruction of information which is merely implicit in an utterance, or which can be reconstructed on the basis of an utterance together with its linguistic, social, and worldly context \cite{grice1975logic,hobbs1993interpretation,clark1996using,hanna2003effects,piantadosi2012communicative}.
 %
 %
 %
@@ -489,10 +489,10 @@ As a further example of importance of rich linguistic context, compare these thr
 \end{multicols}
  \vspace{-.1in}
 \noindent
-(\ref{10}) illustrates a standard scalar implicature, where the choice to use ``hot'' when ``scorching'' would clearly be relevant leads to an inference that Dallas is not, in fact, scorching. In (\ref{11}), however, this inference is much less robust, presumably because it is not clear whether ``scorching'' would be a relevant alternative. Finally, in (\ref{12}) no implicature regarding ``scorching'' arises, but (perhaps surprisingly) the inference that Dallas is not beautiful is very robust. These examples illustrate the importance of taking into account contextual information when drawing inferences from scalar adjectives.
+(\ref{10}) illustrates a standard scalar implicature, where the choice to use ``hot'' when ``scorching'' is relevant leads to an inference that Dallas is not scorching. In (\ref{11}), this inference is much less robust, presumably because it is not clear whether ``scorching'' is a relevant alternative. In (\ref{12}) no implicature regarding ``scorching'' arises, but (perhaps surprisingly) there is a robust inference that Dallas is not beautiful. These examples illustrate the importance of taking context into account when drawing inferences from scalar adjectives.
 
 % introduce dimensionality: big/tall
-A second complication in modeling inferences from scalar arises due to their \textsc{dimensionality} and partial overlap of dimensions. While adjectives such as \emph{tall} and \emph{heavy} pick out a single scalar dimension (height and weight, respectively), multidimensional adjectives such as \emph{big} and \emph{huge} are more complex, typically placing requirements simultaneously on multiple scalar dimensions (e.g., three-dimensional size and perhaps weight, in the case of \emph{big}). Emotive adjectives such as \emph{happy} are even more complex, since the scalar dimensions that they rely on are not easy to identify or quantify. These relationships among adjectives thus raise difficult questions for an inferential model of adjective semantics. Since it is possible for something to be \emph{big} without being \emph{tall}, 
+A second complication in modeling inferences from scalar arises due to \textsc{dimensionality}. While adjectives such as \emph{tall} and \emph{heavy} pick out a single scalar dimension (height and weight, respectively), multidimensional adjectives such as \emph{big} and \emph{huge} are more complex, placing requirements on multiple scalar dimensions (e.g., 3-D size and perhaps weight, in the case of \emph{big}). Emotive adjectives such as \emph{happy} are even more complex, since the dimensions that they rely on are not easy to identify or quantify. These relationships among adjectives thus raise difficult questions for an inferential model of adjective semantics. Since it is possible for something to be \emph{big} without being \emph{tall}, 
 %(by being large but flat, as in a large city), we know that 
 these expressions do not share all of their dimensions and thus are not in an asymmetric entailment relationship as \emph{warm} and \emph{hot} are. But then how do we explain contextual entailments such as the one illustrated in (\ref{4}) above? In addition, there are many cases in which it is simply not clear whether two adjectives are in a scalar relationship: does \emph{happy} asymmetrically entail \emph{content}? Subtle human judgments, gathered under tightly controlled conditions, will be crucial in building and refining a model which will allow NLU systems to approach human performance for such adjectives.
 %when such adjectives are involved.
@@ -1288,27 +1288,15 @@ Wide-Scope Reading: \\
 
 \vspace {-3mm}
 
-For scalar adjectives, we propose to evaluate the scales we construct in the context of an {\sc rte} task. Prior work \cite{clark2007role},
-\cite{clark2008augmenting}, \cite{clark2008using} measured the contribution of specific WordNet relations 
-to this task. It was found that a lexical matching strategy between Text and Hypothesis improved measurably when 
-super- and subordinate terms, synonyms, meronyms, and various relations among verbs were considered. 
-The next logical step is to quantify the contribution of scalar orderings among 
-adjectives in WordNet to the {\sc rte} task.
-We manually inspected several datasets used in the {\sc rte} tasks and found that none included T-H pairs that 
-critically involved scales. We will construct a new test set with some of the adjectives we focus on, 
-including slightly modified data from existing sets as much as possible. Applying a system to such T-H pairs 
-with and without including the scalar information in WordNet, as described below, will allow a straightforward 
-evaluation. 
-To perform the evaluation, we propose to encode three scales in WordNet. We follow the model described in 
-\cite{sheinmanetal2013}, where WordNet's "dumbbells" are maintained and augmented with a linear scale where 
-some -- but not necessarily all -- of the adjectives of each half of the dumbbells are linked with arcs to specific 
-points on the scale. This dual representation preserves the original WordNet representation in terms of one central 
-adjective (e.g., \emph{rich}) and a set of undifferentiated "semantically similar" adjectives like \emph{wealthy, comfortable, prosperous, 
-well-heeled, flush, loaded} etc. while  also indicating their intensity relative to the central adjective and to one another, as described  of \cite{sheinmanetal2013}. 
-This representation is amenable to an external evaluation with systems like \cite{clark2007role}, which allow the measurement of the contribution 
-of the encoding of  scales in WordNet.
+For scalar adjectives, we propose to evaluate the scales constructed in an {\sc rte} task using methods for measuring the contribution of specific WordNet relations developed by \cite{clark2008using,clark2008augmenting,clark2007role}. 
+We will similarly quantify the contribution of scalar orderings among adjectives in WordNet to the {\sc rte} task using a new test set involving adjectives that we have analyzed. 
+To perform the evaluation, will encode new scales in WordNet following the model described in 
+\cite{sheinmanetal2013}, where WordNet's "dumbbells" are augmented with arcs connecting some  adjectives on each half of the dumbbells to specific 
+points on the scale. This preserves the original WordNet representation for one central 
+adjective (e.g., \emph{rich}) and a set of "semantically similar" adjectives (\emph{wealthy, comfortable}, etc.) while also indicating their intensity relative to the central adjective and one another.
+This representation is amenable to external evaluation with systems like \cite{clark2007role}.
 
-Concerning the evaluation of the predicative adjectives with clausal complements,  we base a first, controlled evaluation on the Brandeis TARSQI system.  We submit our final 1,000 snippets to the system. We consider a baseline markup where all the events are factual. We then develop a set of rules based on our findings and evaluate how well the resulting TARSQI system identifies the events.  For a larger scale evaluation we incorporate our rule system and lexical patterns to BiuTee and evaluate how much it improves the performance of that system. 
+Concerning the evaluation of predicative adjectives with clausal complements, we base a first, controlled evaluation on the Brandeis TARSQI system.  We submit our final 1,000 snippets to the system and consider a baseline markup where all the events are factual. We then develop a set of rules based on our findings and evaluate how well the resulting TARSQI system identifies the events.  Larger-scale evaluation proceeds by incorporating our rules and lexical patterns to BiuTee and evaluating the resulting improvement.
 
 %Concerning the evaluation of the predicative adjectives with clausal complements,  we will use
 %the same 1,000 snippets and submit them to the Brandeis TARSQI system to mark up the events. We consider all the events as being factual. We develop a set of rules based on our classifications and evaluate how well the resulting system identifies the events using the scale used in the last MTurker experiment. 
