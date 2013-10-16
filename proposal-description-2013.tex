@@ -468,33 +468,6 @@ This is true in particular for scalar adjectives, which have highly context-sens
  \vspace{-.05in}
 The entailments and pragmatic inferences illustrated here are both important parts of the total understood context of sentences involving scalar adjectives. However, whether the inference arises and how strong it is are highly context-sensitive matters, depending on defeasible assumptions about the speaker's information and the alternative possible utterances that are relevant in context \cite{hirschberg1991theory,frank2012predicting,goodman2013knowledge}. Already in the example above, we see implicatures of varying strength: the speaker's choice to use \emph{warm} will often lead to an inference that the sentence would have been false if \emph{hot} were used, and will likely lead to an even stronger inference that the sentence would have been false if \emph{scorching} were used. 
 
-%
-%As a further example of importance of rich linguistic context, compare these three dialogues: 
-% \vspace{-.1in}
-%\begin{multicols}{3}
-%\eenumsentence{\label{10}
-%\item Is Dallas scorching?
-%\vspace{-.1in}
-%\item It is hot.
-%}
-%\eenumsentence{\label{11}
-%\item Is Dallas hot?
-%\vspace{-.1in}
-%\item It is hot.
-%}
-%\eenumsentence{\label{12}
-%\item Is Dallas beautiful?
-%\vspace{-.45in}
-%\item It is hot. 
-%}
-%\end{multicols}
-% \vspace{-.1in}
-%(\ref{10}) illustrates a standard scalar implicature, where the choice to use ``hot'' when ``scorching'' would clearly be relevant leads to an inference that Dallas is not, in fact, scorching. In (\ref{11}), however, this inference is much less robust, presumably because it is not clear whether ``scorching'' would be a relevant alternative. Finally, in (\ref{12}) no implicature regarding ``scorching'' arises, but (perhaps surprisingly) the inference that Dallas is not beautiful is very robust. These examples illustrate the importance of taking into account contextual information when drawing inferences from scalar adjectives.
-%
-%% introduce dimensionality: big/tall
-%A second complication in modeling inferences from scalar arises due to their \textsc{dimensionality} and partial overlap of dimensions. While adjectives such as \emph{tall} and \emph{heavy} pick out a single scalar dimension (height and weight, respectively), multidimensional adjectives such as \emph{big} and \emph{huge} are more complex, typically placing requirements simultaneously on multiple scalar dimensions (e.g., three-dimensional size and perhaps weight, in the case of \emph{big}). Emotive adjectives such as \emph{happy} are even more complex, since the scalar dimensions that they rely on are not easy to identify or quantify. These relationships among adjectives thus raise difficult questions for an inferential model of adjective semantics. Since it is possible for something to be \emph{big} without being \emph{tall} (by being large but flat, as in a large city), we know that these expressions do not share all of their dimensions and thus are not in an asymmetric entailment relationship as \emph{warm} and \emph{hot} are. But then how then do we explain contextual entailments such as the one illustrated in (\ref{4}) above? In addition, there are many cases in which it is simply not clear whether two adjectives are in a scalar relationship: does \emph{happy} asymmetrically entail \emph{content}? Subtle human judgments, gathered under tightly controlled conditions, will be crucial in building and refining a model which will allow NLU systems to approach human performance when such adjectives are involved.
-%
-
 As a further example of importance of rich linguistic context, compare these three dialogues: 
  \vspace{-.1in}
 \begin{multicols}{3}
@@ -533,7 +506,7 @@ these expressions do not share all of their dimensions and thus are not in an as
 In constructing a formal model of the inferences associated with scalar adjectives, it will be necessary to 
  \vspace{-.25in}
 \begin{itemize}
-\item [1.] determine which adjective pairs are ``co-scalar'', sharing polarity and all scalar dimensions, and differing only in strength;\footnote{\label{polarity}Note that the concept of ``polarity'' intended here is the one used in theoretical linguistics rather than the different concept from sentiment analysis; it refers not to the positive or negative emotional content associated with an expression \cite{wilson2009recognizing} but to the logical ``directionality'' of a scale, as diagnosed by the meaning of the comparative form of the adjective \cite{kennedy2001polar}.}
+\item [1.] determine which adjective pairs are ``co-scalar'', sharing polarity and all scalar dimensions, and differing only in strength;\footnote{\label{polarity}This is the logical notion of ``polarity'' used in formal semantics \cite{kennedy2001polar}, not the emotive concept from sentiment analysis  \cite{wilson2009recognizing}.}
 \item [2.]quantify the difference in strength between co-scalar adjective pairs, in order to predict the strength of implicature (cf.\ \emph{warm/hot/scorching});
 \item [3.]determine which adjective pairs overlap partially, differing e.g.\ only in polarity (\emph{cool} vs.\ \emph{warm}) or display partial overlap of dimensions (\emph{big} vs.\ \emph{tall});
 \item [4.] Identify factors which influence the weighting of different dimensions in the contextual meaning of adjectives, e.g., the factors which allow people to infer that height is the relevant size dimension in interpreting \emph{big} when buildings are under discussion, but not when cities are.
@@ -1119,21 +1092,21 @@ Our approach to inferring quantitative patterns of inference as well as inferenc
 \vspace {-3mm}
 
 %We will begin with experimental and corpus study of two groups of adjectives of interest: a corpus of 100 frequent adjectives with scalar properties expressing different values of twelve different attributes, and a corpus of 300 scalar adjectives for which we have pairwise intensity ratings collected on AMT (10 each). 
- Previous work by \cite{sheinmanetal2013,sheinman2009adjscales}, using a methodology closely related to Hearst's \cite{hearst1992automatic}, demonstrated the usefulness of syntactic patterns hand-selected by expert researchers in identifying co-scalarity and relative intensity of adjective pairs. 
-For example, \cite{sheinmanetal2013} showed that, when two adjectives $X$ and $Y$ are ``semantically similar'' according to WordNet --- indicating that they are likely to be co-scalar and have the same polarity --- it is possible to learn which is stronger by examining the frequency of patterns "$X$, even $Y$" and "if not $Y$, at least $X$". If these and other carefully chosen patterns are frequent, $Y$ is likely to entail $X$ asymmetrically.
+\cite{sheinmanetal2013,sheinman2009adjscales} used a methodology similar to Hearst's \cite{hearst1992automatic} to demonstrated the usefulness of  hand-selected syntactic patterns in identifying co-scalarity and relative intensity of adjective pairs. 
+\cite{sheinmanetal2013} showed that when adjectives $X$ and $Y$ are ``semantically similar'' according to WordNet --- and so likely to be co-scalar --- it is possible to learn which is stronger by examining the frequency of patterns "$X$, even $Y$" and "if not $Y$, at least $X$". If these and other carefully chosen patterns are frequent, $Y$ is likely to entail $X$ asymmetrically.
 
 In a recent pilot experiment, we used the Google Web1T corpus with a slightly expanded set of patterns to classify the 300 adjectives for which we have pairwise intensity ratings from AMT. The results indicate both the promise and the need for expansion of this method. If we simply threshold at 40 (the lowest count contained in the corpus), precision is high but recall is low. Many pairs judged by AMT workers to be co-scalar and differing in intensity did not appear, but most pairs returned were intuitively co-scalar and had the expected intensity relation: ``\textbf{indecent} but not \textbf{obscene}''; ``\textbf{sad}, almost \textbf{tragic}''; ``\textbf{unfriendly}, even \textbf{hostile}''; ``\textbf{satisfactory}, and sometimes even \textbf{good}''  --- but this method also returned ``\textbf{good} but not \textbf{easy}''. (Of course, it is not clear that the last result is a false hit rather than an indication that \emph{good} and \emph{easy} are in a context-dependent probabilistic inference relationship: cf.\ discussion in section \ref{scalar-theory} above.)
 
-We propose to extend the method in \cite{sheinmanetal2013} by learning the relevant patterns rather than specifying them by hand. 
-This approach follows the similar methodology of \cite{snow04,snow2006semantic}, who generalize Hearst's \cite{hearst1992automatic} method of hypernym discovery using a corpus derived from WordNet together with a novel learning algorithm applied to a large corpus of dependency-parsed sentences generated by the freely available Stanford Parser \cite{de2006generating}.
+We propose to extend \cite{sheinmanetal2013} by learning the relevant patterns rather than specifying them by hand. 
+This approach follows \cite{snow04,snow2006semantic}, who generalize Hearst's \cite{hearst1992automatic} method of hypernym discovery using WordNet together with a novel learning algorithm applied to a large corpus of dependency-parsed sentences \cite{de2006generating}.
  This approach allowed them to make use of information contained in many patterns that Hearst had not considered, as well as eliminating noise inherent in the use of raw counts; this resulted in a considerable improvement on WordNet's baseline in both precision and recall.
 
 %Inspired by these two approaches, 
-We will generalize \cite{sheinmanetal2013}'s analysis of scalar intensity relations in several ways. First, we will collect a small gold-standard corpus of judgments of co-scalarity, intuitive strength, entailment, and implicatures among adjective pairs using linguistically trained annotators. Second, we will use adapt these methods to design AMT tasks which allow us to collect a much larger corpus of judgments for the 500 most common adjectives in English, using the gold-standard judgments also as a sanity check on the AMT results. Third, we will extract all 3-, 4-, and 5-grams from the Web1T and (1900-) Google Books corpora which contain any two adjectives in our analysis groups, creating separate, smoothed vector space models for each resulting context. Fourth, we will create a large corpus of parsed text and perform a similar analysis, looking at patterns in dependency relations rather than in raw text. Finally, we will use statistical methods to identify, on the basis of the information carried jointly in these two data sets, which patterns are predictive of the human judgments. We will evaluate the resulting model on AMT annotations and corpus data for held-out adjective pairs. 
+We will combine and generalize these methods in several ways. First, we will collect a small gold-standard corpus of judgments of co-scalarity, intuitive strength, entailment, and implicatures among adjective pairs using linguistically trained annotators. Second, we will use adapt these methods to design AMT tasks which allow us to collect a larger corpus of judgments for the 500 most common adjectives in English, using gold-standard judgments also as a sanity check. Third, we will extract all $n$-grams from the Web1T and (1900-) Google Books corpora which contain any two relevant adjectives. Fourth, we will create a large corpus of dependency-parsed text and perform a similar analysis, looking at patterns in dependency relations rather than raw text. Finally, we will use statistical methods to identify, on the basis of these two data sets, which patterns are predictive of the human judgments and to what extent. We will evaluate the resulting model on AMT annotations and corpus data for held-out adjective pairs. 
 
-In addition to the new and linguistically important subject matter, our work contains an important methodological innovation: due to the of the probabilistic nature of many inferences involving scalar adjectives, we will not a \textbf{binary} judgments about entailment and implicature but rather the \textbf{probability} that an inference is appropriate as estimated from quantitative patterns in AMT workers' judgments. This approach offers the hope of capturing the graded nature of many inferences involving scalar adjectives as well as modeling the important but previously unstudied feature of scalar distance (section \ref{scalar-theory}).
+In addition to the new and linguistically important subject matter, our work contains an important methodological innovation: due to the of the probabilistic nature of many inferences involving scalar adjectives, we will analyze not only \textbf{binary} judgments about entailment and implicature but also the \textbf{probability} that an inference is appropriate, as estimated from quantitative patterns in AMT workers' judgments. This approach offers the hope of capturing the graded nature of many inferences involving scalar adjectives.
 
-WIth these results in hand, we will revisit the original, context-independent judgments used to build the model, exploring in what ways the inclusion of richer context modulates entailment and implicature judgments. We will also explore methods for predicting context-dependent judgments from tagged and parsed corpora, considering at all available linguistic features of the context. This aspect of the project is likely to be challenging, but we expect that the results of the first section will aid us in identifying relevant features and appropriate learning methods. 
+With these results in hand, we will revisit the original, context-independent judgments used to build the model, exploring in what ways the inclusion of richer context modulates entailment and implicature judgments. We will also explore methods for predicting context-dependent judgments from tagged and parsed corpora, considering at all available linguistic features of the context. This aspect of the project is likely to be challenging, but we expect that the results of the first section will aid us in identifying relevant features and appropriate learning methods. 
 
 
 
