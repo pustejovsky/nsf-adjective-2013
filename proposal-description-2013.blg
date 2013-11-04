@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: proposal-description-2013.aux
+The style file: plain.bst
+Database file #1: propbib.bib
+Warning--entry type for "bakerfellbaum2009" isn't style-file defined
+--line 85 of file propbib.bib
+Repeated entry---line 808 of file propbib.bib
+ : @article{sheinmanetal2013
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1128 of file propbib.bib
+ : @inproceedings{bakerfellbaum2009
+ :                                 ,
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in rte
+Warning--empty publisher in Lilt-special-issue
+Warning--empty journal in grice1975logic
+Warning--empty publisher in hearst1992automatic
+Warning--empty journal in munroetal2010
+Warning--empty publisher in stern+dagan:2011
+You've used 73 entries,
+            2118 wiz_defined-function locations,
+            894 strings with 16142 characters,
+and the built_in function-call counts, 24634 in all, are:
+= -- 2416
+> -- 1095
+< -- 27
++ -- 445
+- -- 358
+* -- 1498
+:= -- 3964
+add.period$ -- 232
+call.type$ -- 73
+change.case$ -- 381
+chr.to.int$ -- 0
+cite$ -- 79
+duplicate$ -- 1065
+empty$ -- 2028
+format.name$ -- 358
+if$ -- 5340
+int.to.chr$ -- 0
+int.to.str$ -- 73
+missing$ -- 77
+newline$ -- 366
+num.names$ -- 148
+pop$ -- 528
+preamble$ -- 1
+purify$ -- 321
+quote$ -- 0
+skip$ -- 773
+stack$ -- 0
+substring$ -- 1310
+swap$ -- 287
+text.length$ -- 27
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 268
+warning$ -- 6
+while$ -- 231
+width$ -- 75
+write$ -- 784
+(There were 2 error messages)
